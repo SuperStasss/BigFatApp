@@ -1,0 +1,47 @@
+/**  |============================| base |============================*/
+.list {
+}
+.section-title {
+  margin-bottom: 14px;
+  text-align: center;
+}
+.section-description {
+  margin-bottom: 44px;
+  text-align: center;
+}
+.section {
+  padding: 20px;
+  background-color: #ae1332;
+}
+.container {
+  max-width: 335px;
+}
+/**  |============================| steps |============================*/
+
+.steps-title {
+}
+.steps-description {
+}
+
+.steps-list {
+  margin-bottom: 44px;
+}
+.steps-item {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  min-height: 112px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+.steps-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.steps-item-number {
+  border-radius: 200px;
+}
+.steps-item-description {
+}
+.steps-image {
+}
