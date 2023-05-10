@@ -2,16 +2,21 @@
   <div class="container">
     <h2 class="freshbox-title">Fresh Harvest Box has got you covered</h2>
     <div class="freshbox-images">
+
+
+
+
+
       <picture class="freshbox-picture wide">
         <source srcset="" media="(min-width:375px)" sizes="" />
         <source srcset="" media="(min-width:768px)" sizes="" />
-        <source srcset="" media="min-width:1280px" sizes="" />
+        <source srcset="" media="(min-width:1280px)" sizes="360px" />
         <img class="" src="" alt="Melon" width="335" height="400" />
       </picture>
       <picture class="freshbox-picture none">
         <source srcset="" media="(min-width:375px)" sizes="" />
         <source srcset="" media="(min-width:768px)" sizes="" />
-        <source srcset="" media="min-width:1280px" sizes="" />
+        <source srcset="" media="(min-width:1280px)" sizes="" />
         <img class="" src="" alt="Blueberries" width="335" height="400" />
       </picture>
     </div>
@@ -32,24 +37,28 @@
             required
           />
         </label>
-        <button class="freshbox-btn-send" type="submit">Send</button>
+        <button class="freshbox-btn-send" type="submit" data-modal-open>Send</button>
       </form>
     </div>
   </div>
 </section>
 
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button class="modal-btn-close" type="button">X</button>
+
+    <button class="modal-btn-close" type="button" data-modal-close>
+      <svg width="28" height="28">
+        <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
+      </svg>
+    </button>
+
+
     <picture class="modal-picture">
-      <source srcset="" media="(min-width:375px)" sizes="" />
-      <source srcset="" media="(min-width:768px)" sizes="" />
-      <source
-        srcset=""
-        media="min-width:1280px"
-        sizes="(min-width: 1200px), width=207"
-      />
-      <img class="" src="" alt="Raspberries" width="335" />
+      <source srcset="" media="(min-width:1280px)" sizes="278px"/>
+      <source srcset="" media="(min-width:768px)" sizes="278px" />
+      <source srcset="" media="(min-width:375px)" sizes="207px" />     
+      
+      <img class="" src="" alt="Raspberries" width="100%"/>
     </picture>
     <h2 class="modal-title">Thank you</h2>
     <p class="modal-text">
@@ -61,13 +70,6 @@
   </div>
 </div>
 
+<script src="../js/modal.js"></script>
 
 
-
-
-<div>
-  <p>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore esse
-    
-  </p>
-</div>
