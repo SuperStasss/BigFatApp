@@ -1,12 +1,10 @@
 /**  |============================| base |============================*/
 /* .list {
 }
-.section-title {
-  margin-bottom: 14px;
+.section-title {  
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 28px;
   line-height: 1em;
   text-align: center;
   letter-spacing: -0.04em;
@@ -16,7 +14,6 @@
 }
 .description {
   font-family: 'DM Sans', sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29em;
@@ -28,13 +25,14 @@
 }
 .container {
   padding: 20px;
-
   max-width: 375px;
   margin: 0 auto;
 } */
 /**  |============================| steps |============================*/
 
 .steps-title {
+  font-size: 28px;
+  margin: 0 auto 14px;
 }
 .steps-description {
   text-align: center;
@@ -107,4 +105,35 @@
   object-fit: cover;
   object-position: 0 0;
   border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .steps-title {
+    display: block;
+    width: 642px;
+    font-size: 40px;
+    line-height: 1.1em;
+  }
+  .steps-description {
+    display: block;
+    width: 509px;
+    margin: 0 auto 44px;
+  }
+  .steps-item {
+    max-width: 389px;
+    height: 128px;
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+  .steps-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .steps-list {
+    margin-bottom: 80px;
+  }
+  .gif-wrapper {
+    max-width: 704px;
+    height: 476px;
+    margin-bottom: 144x;
+  }
 }
