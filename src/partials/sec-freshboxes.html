@@ -30,7 +30,7 @@
           ../images/desktop/fresh/melon-desktop.webp,
           ../images/desktop/fresh/melon-desktop@2.webp
         "
-        sizes="(min-width: 1280px) 400px, (min-width: 768px) 344px, (min-width: 375) 335px"
+        sizes="(min-width: 1280px) 400, (min-width: 768px) 344px, (min-width: 375) 335px"
       />
     </div>
 
@@ -48,7 +48,8 @@
             type="email"
             name="E-mail"
             id="freshbox-email"
-            required
+            placeholder="Enter email..."
+            required            
           />
         </label>
         <button class="freshbox-btn-send" type="submit" data-modal-open>
@@ -66,14 +67,31 @@
         <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
       </svg>
     </button>
+    <img
+        class="modal-picture"
+        src="../images/mobile/fresh/melon-mobile.webp"
+        alt="Raspberries"
+        srcset="
+          ../images/mobile/fresh/melon-mobile.webp,
+          ../images/mobile/fresh/melon-mobile@2x.webp,
+          ../images/tablet/fresh/melon-tablet.webp,
+          ../images/tablet/fresh/melon-tablet@2x.webp,
+          ../images/desktop/fresh/melon-desktop.webp,
+          ../images/desktop/fresh/melon-desktop@2.webp
+        "
+        sizes="(min-width: 1280px) 278px, (min-width: 768px) 278px, (min-width: 375) 207px"
+      />
 
-    <picture class="modal-picture">
+
+
+
+    <!-- <picture class="modal-picture">
       <source srcset="" media="(min-width:1280px)" sizes="278px" />
       <source srcset="" media="(min-width:768px)" sizes="278px" />
       <source srcset="" media="(min-width:375px)" sizes="207px" />
 
       <img class="" src="" alt="Raspberries" width="100%" />
-    </picture>
+    </picture> -->
     <h2 class="modal-title">Thank you</h2>
     <p class="modal-text">
       Thank you for your order! Our team is preparing your box with fresh,
