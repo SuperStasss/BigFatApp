@@ -35,9 +35,6 @@
 } */
 /**  |============================| steps |============================*/
 
-.steps {
-  padding-top: 40px;
-}
 .steps-title {
 }
 .steps-description {
@@ -91,5 +88,15 @@
 .steps-item-description {
   color: var(--card-text-black);
 }
+
+.gif-wrapper {
+  /* position: relative;
+  overflow: hidden; */
+  max-width: 335px;
+  margin-bottom: 80px;
+  border-radius: 20px;
+}
+
 .steps-image {
+  width: 100%;
 }
