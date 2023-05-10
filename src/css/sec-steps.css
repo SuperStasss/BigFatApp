@@ -1,5 +1,5 @@
 /**  |============================| base |============================*/
-.list {
+/* .list {
 }
 .section-title {
   margin-bottom: 14px;
@@ -25,13 +25,14 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .section {
-  padding: 20px;
   background-color: #ae1332;
 }
 .container {
-  max-width: 335px;
+  padding: 20px;
+
+  max-width: 375px;
   margin: 0 auto;
-}
+} */
 /**  |============================| steps |============================*/
 
 .steps {
@@ -65,30 +66,30 @@
   height: 48px;
   text-align: center;
   line-height: 48px;
-  color: #ffffff;
+  color: var(--primary-color);
   border-radius: 200px;
 
-  font-family: 'DM Sans', sans-serif;
+  /* font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.04em; */
 }
 
 .steps-item:nth-child(1) .steps-item-number {
-  background-color: #ae1332;
+  background-color: var(--main-color);
 }
 
 .steps-item:nth-child(2) .steps-item-number {
-  background-color: #a1c864;
+  background-color: var(--button-color);
 }
 
 .steps-item:nth-child(3) .steps-item-number {
-  background-color: #f5ce13;
+  background-color: var(--secondary-color);
 }
 
 .steps-item-description {
-  color: #000000;
+  color: var(--card-text-black);
 }
 .steps-image {
 }
