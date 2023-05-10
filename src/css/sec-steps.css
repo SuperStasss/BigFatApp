@@ -1,0 +1,102 @@
+/**  |============================| base |============================*/
+/* .list {
+}
+.section-title {
+  margin-bottom: 14px;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.description {
+  margin-bottom: 44px;
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29em;
+  letter-spacing: -0.04em;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.section {
+  background-color: #ae1332;
+}
+.container {
+  padding: 20px;
+
+  max-width: 375px;
+  margin: 0 auto;
+} */
+/**  |============================| steps |============================*/
+
+.steps-title {
+}
+.steps-description {
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.steps-list {
+  margin-bottom: 44px;
+}
+.steps-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  min-height: 112px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--primary-color);
+}
+.steps-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.steps-item-number {
+  min-width: 136px;
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+  color: var(--primary-color);
+  border-radius: 200px;
+
+  /* font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.04em; */
+}
+
+.steps-item:nth-child(1) .steps-item-number {
+  background-color: var(--main-color);
+}
+
+.steps-item:nth-child(2) .steps-item-number {
+  background-color: var(--button-color);
+}
+
+.steps-item:nth-child(3) .steps-item-number {
+  background-color: var(--secondary-color);
+}
+
+.steps-item-description {
+  color: var(--card-text-black);
+}
+
+.gif-wrapper {
+  /* position: relative;
+  overflow: hidden; */
+  max-width: 335px;
+  margin-bottom: 80px;
+  border-radius: 20px;
+}
+
+.steps-image {
+  width: 100%;
+}
