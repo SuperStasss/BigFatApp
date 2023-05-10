@@ -16,8 +16,9 @@
 @import url('./footer.css');
 
 
+
 :root {
---primary-color: #FFFFF;
+--primary-color: #FFFFFF;
 --main-color:#AE1332;
 --button-color:#A4CB66;
 --secondary-color:#F5CE13;
