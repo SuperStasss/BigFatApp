@@ -1,25 +1,39 @@
 <section class="freshbox">
-  <div class="container">
+  <div class="container freshbox-cont">
     <h2 class="freshbox-title">Fresh Harvest Box has got you covered</h2>
     <div class="freshbox-images">
-
-
-
-
-
-      <picture class="freshbox-picture wide">
-        <source srcset="" media="(min-width:375px)" sizes="" />
-        <source srcset="" media="(min-width:768px)" sizes="" />
-        <source srcset="" media="(min-width:1280px)" sizes="360px" />
-        <img class="" src="" alt="Melon" width="335" height="400" />
-      </picture>
-      <picture class="freshbox-picture none">
-        <source srcset="" media="(min-width:375px)" sizes="" />
-        <source srcset="" media="(min-width:768px)" sizes="" />
-        <source srcset="" media="(min-width:1280px)" sizes="" />
-        <img class="" src="" alt="Blueberries" width="335" height="400" />
-      </picture>
+      <img
+        class="freshbox-picture wide"
+        src="../images/mobile/fresh/melon-mobile.webp"
+        alt="Melon"
+        srcset="
+          ../images/mobile/fresh/melon-mobile.webp,
+          ../images/mobile/fresh/melon-mobile@2x.webp,
+          ../images/tablet/fresh/melon-tablet.webp,
+          ../images/tablet/fresh/melon-tablet@2x.webp,
+          ../images/desktop/fresh/melon-desktop.webp,
+          ../images/desktop/fresh/melon-desktop@2.webp
+        "
+        sizes="(min-width: 1280px) 792px,
+                (min-width: 768px) 344px,
+                (min-width: 375) 335px"
+      />
+      <img
+        class="freshbox-picture none"
+        src="../images/mobile/fresh/melon-mobile.webp"
+        alt="Melon"
+        srcset="
+          ../images/mobile/fresh/melon-mobile.webp,
+          ../images/mobile/fresh/melon-mobile@2x.webp,
+          ../images/tablet/fresh/melon-tablet.webp,
+          ../images/tablet/fresh/melon-tablet@2x.webp,
+          ../images/desktop/fresh/melon-desktop.webp,
+          ../images/desktop/fresh/melon-desktop@2.webp
+        "
+        sizes="(min-width: 1280px) 400px, (min-width: 768px) 344px, (min-width: 375) 335px"
+      />
     </div>
+
     <div class="freshbox-bottom">
       <p class="freshbox-text">
         Our boxes are packed with delicious, nutritious fruits and vegetables,
@@ -37,7 +51,9 @@
             required
           />
         </label>
-        <button class="freshbox-btn-send" type="submit" data-modal-open>Send</button>
+        <button class="freshbox-btn-send" type="submit" data-modal-open>
+          Send
+        </button>
       </form>
     </div>
   </div>
@@ -45,31 +61,26 @@
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-
     <button class="modal-btn-close" type="button" data-modal-close>
       <svg width="28" height="28">
         <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
       </svg>
     </button>
 
-
     <picture class="modal-picture">
-      <source srcset="" media="(min-width:1280px)" sizes="278px"/>
+      <source srcset="" media="(min-width:1280px)" sizes="278px" />
       <source srcset="" media="(min-width:768px)" sizes="278px" />
-      <source srcset="" media="(min-width:375px)" sizes="207px" />     
-      
-      <img class="" src="" alt="Raspberries" width="100%"/>
+      <source srcset="" media="(min-width:375px)" sizes="207px" />
+
+      <img class="" src="" alt="Raspberries" width="100%" />
     </picture>
     <h2 class="modal-title">Thank you</h2>
     <p class="modal-text">
       Thank you for your order! Our team is preparing your box with fresh,
       delicious fruits and vegetables, and we'll deliver it straight to your
-      doorstep. We appreciate your business and look forward to providing you with
-      the best possible experience!
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
     </p>
   </div>
+  <script type="module" src="../js/modal.js"></script>
 </div>
-
-
-
-
