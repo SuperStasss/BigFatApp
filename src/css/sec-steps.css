@@ -1,7 +1,7 @@
 /**  |============================| base |============================*/
 /* .list {
 }
-.section-title {  
+.section-title {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -104,7 +104,7 @@
   object-position: 0 0;
   border-radius: 20px;
 }
-@media only screen and (max-width: 767.9px) {
+@media only screen and (max-width: 767px) {
   .steps-item:not(:last-child) {
     margin-bottom: 20px;
   }
@@ -137,7 +137,7 @@
     margin-bottom: 144px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1279.9px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   .steps-item:not(:last-child) {
     margin-bottom: 24px;
   }
