@@ -17,5 +17,10 @@
 
 
 :root {
-
+--primary-color: #FFFFF;
+--main-color:#AE1332;
+--button-color:#A4CB66;
+--secondary-color:#F5CE13;
+--card-text-black:#000;
+--anim-transition: 250ms linear;
 }
