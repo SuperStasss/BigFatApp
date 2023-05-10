@@ -39,7 +39,7 @@
 }
 .steps-description {
   text-align: center;
-  color: #ffffff;
+  color: var(--primary-color);
 }
 
 .steps-list {
@@ -53,7 +53,7 @@
   min-height: 112px;
   padding: 20px;
   border-radius: 20px;
-  background: #ffffff;
+  background: var(--primary-color);
 }
 .steps-item:not(:last-child) {
   margin-bottom: 20px;
