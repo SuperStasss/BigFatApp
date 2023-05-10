@@ -24,3 +24,16 @@
 --card-text-black:#000;
 --anim-transition: 250ms linear;
 }
+
+.container{
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  }
+@media screen and (min-width: 768px) {
+  .container{
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+  }
