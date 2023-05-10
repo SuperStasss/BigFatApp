@@ -59,16 +59,12 @@
   display: none;
 }
 
-
-
-
-
-
-
-
 .freshbox-bottom {
   display: none;
 }
+
+
+
 
 @media screen and (min-width: 768px) {
    
@@ -82,24 +78,22 @@
   }
 
   .freshbox-title {
+    position: absolute;
     width: 648px;
     height: 108px;
-    left: 28px;
-    top: 144px;
+    left: 60px;    
+    top: -79px;
 
     font-size: 54px;
+    line-height: 1;
   }
-
+  
   .freshbox-images {
     display: flex;
     gap: 16px;
     margin-bottom: 80px;
 
     outline: 1px solid red;
-  }
-
-  .freshbox-picture {
-    width: 344px;
   }
 
   .freshbox-picture.none {
@@ -121,16 +115,13 @@
     align-items: center;
     text-align: center;
 
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
 
     letter-spacing: -0.04em;
 
     color: blue;
-    /* color: #ffffff; */
+    /* color: var(--primary-color); */
 
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   }
@@ -143,24 +134,34 @@
     width: 292px;
     height: 48px;
     padding-left: 16px;
+    
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
 
-    opacity: 0.3;
-
+    color: blue;
+    /* color: var(--primary-color); */
+    
     border: 1px solid transparent;
-    border-color: green;
-    /* border: 1px solid #FFFFFF; */
+    outline: 1px solid transparent;
+
+    border-color: green;    
+
+    /* opacity: 0.3; */
+    /* border-color: 1px solid #FFFFFF; */
 
     border-radius: 100px;
   }
   .freshbox-input:hover,
   .freshbox-input:focus {
+    border: 1px solid transparent;
     outline: 1px solid transparent;
-    outline-color: blue;
-    border-color: none;
+    border-color: blue;
+    
   }
   .freshbox-input:invalid {
-
-    outline:1px solid red;
+    border-color: var(--primary-color);
+    outline: 1px solid red;
   }
 
   .freshbox-btn-send {
@@ -168,7 +169,6 @@
     bottom: 0;
     left: 202px;
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     padding: 15px 35px;
     width: 102px;
@@ -178,9 +178,6 @@
     background: #9dc162;
     border-color: transparent;
 
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.04em;
@@ -260,28 +257,25 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-    padding: 239px 32px 150px 32px;
 
+
+  .freshbox {
+    padding-top: 239px;    
     outline: 1px solid green;
   }
 
   .freshbox-title {
     width: 740px;
     height: 128px;
-    top: 150px;
-    left: 238px;
+    top: -89px;
+    left: 270px;
 
     font-size: 64px;
+    line-height: 1;
   }
 
   .freshbox-images {
     gap: 24px;
-  }
-
-  .freshbox-picture {
-    width: 400px;
   }
   .freshbox-picture.wide {
     width: 792px;
