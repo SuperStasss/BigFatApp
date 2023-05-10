@@ -1,0 +1,146 @@
+.portfolio-sec-title {
+  margin-bottom: 14px;
+}
+.portfolio-section-text {
+  margin-bottom: 44px;
+}
+.portfolio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-item {
+  width: 335px;
+  padding-top: 64px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  border-radius: 20px;
+}
+
+.strawberry {
+  background-color: #f8766b;
+}
+.banana {
+  background-color: #edd251;
+}
+.watermelon {
+  background-color: #9dc262;
+}
+.lime {
+  background-color: #bfd663;
+}
+.apple {
+  background-color: #e93f29;
+}
+.peach {
+  background-color: #db4f4b;
+}
+.plums {
+  background-color: #9b5366;
+}
+.orange {
+  background-color: #f47f4c;
+}
+.kiwi {
+  background-color: #98b37e;
+}
+
+@media screen and (max-width: 767px) {
+  .plums {
+    display: none;
+  }
+  .orange {
+    display: none;
+  }
+  .kiwi {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .kiwi {
+    display: none;
+  }
+}
+
+.portfolio-fruit-name {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1, 19;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.fruit-discr {
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1, 3px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+.price-btn {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1, 33;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.04em;
+  background: #ffffff;
+  border-radius: 200px;
+  color: #ae1332;
+  border: none;
+  padding: 12px, 21px;
+  width: 136px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+}
+.portfolio-order-btn {
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+  padding: 26px, 7px;
+}
+.portfolio-order-icon {
+  fill: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 16px) / 2);
+  }
+  .portfolio-item {
+    min-width: 344px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
+  .portfolio-item {
+    min-width: 389px;
+  }
+}
