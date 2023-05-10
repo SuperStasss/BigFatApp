@@ -1,11 +1,8 @@
 .footer-container {
-  width: 375px;
-
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding: 80px 20px;
 }
 
 /* Fotter-img */
@@ -62,7 +59,8 @@
 }
 .social-addres {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 44px;
 }
 /* Addres */
@@ -70,15 +68,18 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  max-width: 140px;
+  /* max-width: 140px; */
 }
 .addres-item {
   text-align: center;
 }
+.addres-item:last-child {
+  max-width: 140px;
+}
 .phone-item-link {
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 1.3;
   letter-spacing: 0em;
   text-align: left;
   color: var(--main-color);

@@ -49,3 +49,6 @@
     width: 1280px;
   }
 }
+section{
+  background-color: var(--main-color);
+  }

@@ -1,46 +1,73 @@
 <section class="hero">
   <div class="container">
-    <div class="hero-box-title">
-      <h1 class="hero-title">
-        fresh harvest box<br />is your one-stop place for a delicious fruit
-        basket
-      </h1>
-      <img
-        class="hero-strawberry"
-        src="./img/hero-strawberry.png"
-        width="56"
-        height="56"
-        alt="Strawberry"
-      />
-      <img
-        class="hero-banana"
-        src="./img/hero-banana.png"
-        width="66"
-        height="44"
-        alt="Banana"
-      />
-    </div>
-    <div class="hero-box-img">
-      <img
-        class="hero-orange"
-        src="./img/hero-orange.jpg"
-        width="311"
-        height="484"
-        alt="The girl holds an orange in her hand"
-      />
-      <img
-        class="hero-orange-bottom"
-        src="./img/elements.png"
-        width="335"
-        height="509"
-        alt=""
-      />
-      <div class="hero-box-shop">
-        <a class="hero-link" rel="noopener, noreferrer" href="#fruits"
-          >shop<br />now
-        </a>
+    <div class="hero-wrapper animate__animated animate__fadeInDownBig">
+      <div class="hero-box-title">
+        <h1 class="hero-title">
+          fresh harvest box<br />is your one-stop place for a delicious fruit
+          basket
+        </h1>
+        <img
+          class="hero-strawberry"
+          srcset="
+            ../images/mobile/hero/strawbery-hero-mobile.webp      64w,
+            ../images/mobile/hero/strawbery-hero-mobile@2x.webp  128w,
+            ../images/tablet/hero/strawberry-hero-tablet.webp    124w,
+            ../images/tablet/hero/strawberry-hero-tablet@2x.webp 248w,
+            ../images/desktop/hero/strawberry-hero.webp          136w,
+            ../images/desktop/hero/strawberry-hero@2x.webp       272w
+          "
+          sizes="(min-width: 1280px) 136px, (min-width: 768px) 124px, 64px"
+          src="../images/mobile/hero/strawberry-hero-mobile.webp"
+          alt="Strawberry"
+        />
+        <img
+          class="hero-banana"
+          srcset="
+            ../images/mobile/hero/banan-hero-mobile.webp     86w,
+            ../images/mobile/hero/banan-hero-mobile@2x.webp 172w,
+            ../images/tablet/hero/banan-hero-tablet.webp    170w,
+            ../images/tablet/hero/banan-hero-tablet@2x.webp 340w,
+            ../images/desktop/hero/banan-hero.webp          229w,
+            ../images/desktop/hero/banan-hero@2x.webp       458w
+          "
+          sizes="(min-width: 1280px) 229px, (min-width: 768px) 170px, 86px"
+          src="../images/mobile/hero/banan-hero-mobile.webp"
+          alt="Banana"
+        />
+      </div>
+      <div class="hero-box-img">
+        <img
+          class="hero-orange"
+          srcset="
+            ../images/mobile/hero/hero-mobile.webp    311w,
+            ../images/mobile/hero/hero-mobile@2x.webp 622w,
+            ../images/tablet/hero/hero-tablet.webp    452w,
+            ../images/tablet/hero/hero-tablet@2x.webp 904w
+          "
+          sizes="(min-width: 768px) 452px, 311px"
+          src="../images/mobile/hero/hero-mobile.webp"
+          alt="The girl holds an orange in her hand"
+        />
+        <img
+          class="hero-orange-bottom"
+          srcset="
+            ../images/mobile/hero/elements-m.webp    335w,
+            ../images/mobile/hero/elements-m@2x.webp 670w,
+            ../images/tablet/hero/elements-t.webp    486w,
+            ../images/tablet/hero/elements-t@2x.webp 972w
+          "
+          sizes="(min-width: 768px) 486px, 335px"
+          src="../images/mobile/hero/elements-m.webp"
+          alt=""
+        />
+        <div class="hero-box-shop">
+          <a class="hero-link" rel="noopener, noreferrer" href="#fruits"
+            >shop<br />now
+          </a>
+        </div>
       </div>
     </div>
+
     <div class="hero-watermelon">
       <p class="hero-watermelon-desc">
         Our expertly curated fruit baskets are made with the freshest, highest
