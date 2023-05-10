@@ -4,64 +4,72 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/bigfatapp/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/bigfatapp/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/bigfatapp/assets/index-5e9e093a.css">
+    <link rel="stylesheet" href="/bigfatapp/assets/index-a54ebf42.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <div class="nav-block">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#how-it-works" class="nav-link">How It Works</a>
-        </li>
-        <li class="nav-item">
-          <a href="#fruits" class="nav-link">Fruits</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contacts" class="nav-link">Contacts</a>
-        </li>
-      </ul>
-    </div>
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-block">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#fruits" class="nav-link">Fruits</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacts" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="logo">
-      <a class="logo-link" href=""
-        ><svg class="logo-icon" width="16" height="16">
-          <use href=""></use>
-        </svg>
-        <span class="logo-title">fresh harvest box</span></a
-      >
-    </div>
+      <div class="logo">
+        <a class="logo-link" href=""
+          ><svg class="logo-icon" width="16" height="16">
+            <use href="../images/sprite-fruts.svg#icon-cub_menu"></use>
+          </svg>
+          <span class="logo-title">fresh harvest box</span></a
+        >
+      </div>
 
-    <div class="menu">
-      <button type="button" class="burger">
-        <svg class="burger-icon" width="24" height="24">
-          <use href=""></use>
-        </svg>
-      </button>
-    </div>
+      <div class="menu">
+        <button type="button" class="burger">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="../images/sprite-fruts.svg#icon-burger_menu"></use>
+          </svg>
+        </button>
+      </div>
 
-    <div class="basket">
-      <button type="button" class="basket-button">
-        <svg class="basket-icon" width="24" height="24">
-          <use href=""></use>
-        </svg>
-      </button>
-    </div>
-  </nav>
+      <div class="basket">
+        <button type="button" class="basket-button">
+          <svg class="basket-icon" width="24" height="24">
+            <use href="../images/sprite-fruts.svg#icon-korzuna"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <button class="close-menu" type="button">
+      <svg class="close-icon" width="24" height="24">
+        <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
+      </svg>
+    </button>
+  </div>
 </header>
 
 <!-- =====  MOBILE-MENU ===== -->
 
 <div class="mobile-menu">
-  <button class="close-menu" type="button">
-    <svg class="close-icon" width="24" height="24">
-      <use href=""></use>
-    </svg>
-  </button>
-
   <div class="menu-open">
     <ul class="menu-list">
       <li class="menu-item">
@@ -86,15 +94,96 @@
 
     <main>
       <section class="hero">
-  <!-- type your code here-->
+  <div class="container">
+    <div class="hero-box-title">
+      <h1 class="hero-title">
+        fresh harvest box<br />is your one-stop place for a delicious fruit
+        basket
+      </h1>
+      <img
+        class="hero-strawberry"
+        src="./img/hero-strawberry.png"
+        width="56"
+        height="56"
+        alt="Strawberry"
+      />
+      <img
+        class="hero-banana"
+        src="./img/hero-banana.png"
+        width="66"
+        height="44"
+        alt="Banana"
+      />
+    </div>
+    <div class="hero-box-img">
+      <img
+        class="hero-orange"
+        src="./img/hero-orange.jpg"
+        width="311"
+        height="484"
+        alt="The girl holds an orange in her hand"
+      />
+      <img
+        class="hero-orange-bottom"
+        src="./img/elements.png"
+        width="335"
+        height="509"
+        alt=""
+      />
+      <div class="hero-box-shop">
+        <a class="hero-link" rel="noopener, noreferrer" href="#fruits"
+          >shop<br />now
+        </a>
+      </div>
+    </div>
+    <div class="hero-watermelon">
+      <p class="hero-watermelon-desc">
+        Our expertly curated fruit baskets are made with the freshest, highest
+        quality fruits available. Whether you are looking for a healthy snack or
+        a gift for a loved one, Fresh Harvest Box has got you covered.
+      </p>
+      <div class="hero-watermelon-box">
+        <p class="box-title">Fruit</p>
+        <img class="hero-box-img" src="#" alt="watermelon" />
+        <p class="watermelon-desc">
+          Refreshing and juicy, watermelon is the perfect summer treat and a
+          great source of hydration
+        </p>
+      </div>
+    </div>
+    <div class="hero-strawberry">
+      <ul class="hashtags-list">
+        <li class="hashtags-list-item">
+          <h3 class="hashtags-text">#organic</h3>
+        </li>
+        <li class="hashtags-list-item">
+          <h3 class="hashtags-text">#products</h3>
+        </li>
+        <li class="hashtags-list-item">
+          <h3 class="hashtags-text">#basket</h3>
+        </li>
+        <li class="hashtags-list-item">
+          <h3 class="hashtags-text">#fruits</h3>
+        </li>
+      </ul>
+      <div class="hero-strawberry-box">
+        <p class="box-title">Fruit</p>
+        <img class="hero-box-img" src="#" alt="strawberry" />
+        <p class="strawberry-desc">
+          Sweet and juicy, strawberries are packed with vitamin C and
+          antioxidants, making them a delicious and healthy snack
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-      <section class="steps">
-  <container class="steps-container">
-    <h2 class="section-title">
+      <section class="steps section">
+  <div class="container">
+    <h2 class="section-title steps-title">
       To order your fruit basket, simply follow these easy steps
     </h2>
-    <p class="section-description">
+    <p class="steps-description description">
       Our baskets are assembled with care and delivered straight to your
       doorstep, so you can enjoy the taste of fresh fruit without ever leaving
       your home. Whether you're looking for a healthy snack or a thoughtful
@@ -103,90 +192,203 @@
     <ul class="steps-list list">
       <li class="steps-item">
         <span class="steps-item-number">First Step</span>
-        <p class="steps-item-description">
+        <p class="steps-item-description description">
           Just choose the fruit you want to order by clicking on the checkboxes
           next to it.
         </p>
       </li>
       <li class="steps-item">
         <span class="steps-item-number">Second Step</span>
-        <p class="steps-item-description">
+        <p class="steps-item-description description">
           Click on the basket and fill out the form.
         </p>
       </li>
       <li class="steps-item">
         <span class="steps-item-number">Third Step</span>
-        <p class="steps-item-description">
+        <p class="steps-item-description description">
           Sit back and relax! Your fresh fruit basket will be delivered.
         </p>
       </li>
     </ul>
-    <picture>
-      <source media="(min-width: 1280px)" srcset="" />
-      <source media="(min-width: 768px)" srcset="" />
-      <source media="(max-width: 767px)" srcset="" />
+    <div class="gif-wrapper">
       <img
         src=""
         alt="berries mix"
         class="steps-image"
         width="704"
         height="476"
-    /></picture>
-  </container>
+      />
+    </div>
+  </div>
 </section>
 
-      <section></section>
+      <section class="portfolio">
+  <div class="container">
+    <h2 class="section-title">organic fruits</h2>
+    <p class="portfolio-section-text">
+      Our organic fruits are hand-picked from local farms and delivered straight
+      to your doorstep, ensuring that you get the freshest and most nutritious
+      produce possible. We offer a wide selection of organic fruits grown
+      without the use of harmful pesticides or chemicals.
+    </p>
+    <ul class="portfolio-list list">
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Strawberry</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Strawberry" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">100 UAH / kg</button>
+      </li>
+      <li class="portfolio-list list"></li>
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Banana</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Banana" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">80 UAH / kg</button>
+      </li>
+      <li class="portfolio-list list"></li>
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Watermelon</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Watermelon" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">40 UAH / kg</button>
+      </li>
+      <li class="portfolio-list list"></li>
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Lime</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Lime" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">60 UAH / kg</button>
+      </li>
+      <li class="portfolio-list list"></li>
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Apple</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Apple" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">50 UAH / kg</button>
+      </li>
+      <li class="portfolio-list list"></li>
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Peach</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Peach" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">80 UAH / kg</button>
+      </li>
+      <li class="portfolio-list list"></li>
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Plums</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Plums" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">40 UAH / kg</button>
+      </li>
+      <li class="portfolio-list list"></li>
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Orange</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Orange" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">60 UAH / kg</button>
+      </li>
+      <li class="portfolio-list list"></li>
+      <li class="portfolio-item">
+        <h4 class="portfolio-fruit-name">Kiwi</h4>
+        <p class="fruit-discr">Plant</p>
+        <img src="" alt="Kiwi" width="295px" height="251px" srcset="" />
+        <button class="price-btn" type="button">90 UAH / kg</button>
+      </li>
+    </ul>
+    <button class="portfolio-order-btn" type="button">
+      <svg class="portfolio-order-icon">
+        <use></use>
+      </svg>
+      <span>Order</span>
+    </button>
+  </div>
+</section>
 
       
     </main>
     <footer>
-  <img src="" alt="" />
-  <a href="#" class="logo"><img src="" alt="" />fresh harvest box</a>
-  <ul class="footer-nav">
-    <li class="footer-nav-item"><a href="#">How It Works</a></li>
-    <li class="footer-nav-item"><a href="#">Fruits</a></li>
-    <li class="footer-nav-item"><a href="#">Contacts</a></li>
-  </ul>
-  <ul class="social-list">
-    <li class="social-item">
-      <a href="https://www.facebook.com/" target="_blank">
-        <svg class="social-icon">
-          <use href=""></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social-item">
-      <a href="https://www.instagram.com/" target="_blank">
-        <svg class="social-icon">
-          <use href=""></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social-item">
-      <a href="https://www.youtube.com/" target="_blank">
-        <svg class="social-icon">
-          <use href=""></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-  <ul class="addres">
-    <li class="addres-item">
-      <a href="tel:+380684429426" class="addres-item-link"
-        >+380 (68) 443-94-26</a
-      >
-    </li>
-    <li class="addres-item">
-      <a
-        href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+%D0%A1%D0%A8%D0%90/"
-        target="_blank"
-        class="addres-item-link"
-        >1678 S. Pioneer Road Salt Lake City UT 84104</a
-      >
-    </li>
-  </ul>
+  <dvi class="footer-container">
+    <div class="img-logo">
+      <img
+        src="../images/mobile/footer/logo-footer-mobile.webp"
+        srcset="
+          ../images/mobile/footer/logo-footer-mobile.webp    1x,
+          ../images/mobile/footer/logo-footer-mobile@2x.webp 2x
+        "
+        alt="happy-woman-holding-tropical-fruits"
+        class="img-footer"
+      />
+      <div class="logo">
+        <a class="logo-link" href=""
+          ><svg class="logo-icon" width="16" height="16">
+            <use href="../images/sprite-fruts.svg#icon-cub_menu"></use>
+          </svg>
+          <span class="logo-title">fresh harvest box</span></a
+        >
+      </div>
+    </div>
+    <ul class="footer-nav">
+      <li class="footer-nav-item">
+        <a href="#" class="nav-link">How It Works</a>
+      </li>
+      <li class="footer-nav-item"><a href="#" class="nav-link">Fruits</a></li>
+      <li class="footer-nav-item"><a href="#" class="nav-link">Contacts</a></li>
+    </ul>
+    <div class="social-addres">
+      <ul class="social-list">
+        <li class="social-item">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="social-link"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="../images/sprite-fruts.svg#icon-Facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="social-link"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="../images/sprite-fruts.svg#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.youtube.com/"
+            target="_blank"
+            class="social-link"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="../images/sprite-fruts.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <ul class="addres">
+        <li class="addres-item">
+          <a href="tel:+380684429426" class="phone-item-link"
+            >+380 (68) 443-94-26</a
+          >
+        </li>
+        <li class="addres-item">
+          <a
+            href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+%D0%A1%D0%A8%D0%90/"
+            target="_blank"
+            class="addres-item-link"
+            >1678 S. Pioneer Road Salt Lake City UT 84104</a
+          >
+        </li>
+      </ul>
+    </div>
+  </dvi>
 </footer>
 
     
   </body>
-</html>
+</html>x
