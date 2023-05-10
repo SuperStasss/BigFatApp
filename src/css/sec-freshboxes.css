@@ -1,0 +1,261 @@
+/* .freshbox {
+width: 100%;
+} */
+
+.container {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  outline: 1px solid red;
+}
+
+.freshbox-title {
+  position: absolute;
+  width: 335px;
+  height: 96px;
+  left: 20px;
+  /* top: 0px; */
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: blue;
+  /* color: #ffffff; */
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.freshbox-picture {
+  display: block;
+  width: 335px;
+  height: auto;
+  border-radius: 20px;
+
+  outline: 1px solid blue;
+}
+
+.freshbox-picture.none {
+  display: none;
+}
+
+.freshbox-bottom {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 223px 32px 144px 32px;
+  }
+
+  .freshbox-title {
+    width: 648px;
+    height: 108px;
+    left: 28px;
+    top: 144px;
+
+    font-size: 54px;
+  }
+
+  .freshbox-images {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 80px;
+
+    outline: 1px solid red;
+  }
+
+  .freshbox-picture {
+    width: 344px;
+  }
+
+  .freshbox-picture.none {
+    display: block;
+  }
+
+  .freshbox-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    width: 492px;
+
+    outline: 1px solid red;
+  }
+
+  .freshbox-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+
+    letter-spacing: -0.04em;
+
+    color: blue;
+    /* color: #ffffff; */
+
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
+
+  .freshbox-form {
+    position: relative;
+  }
+
+  .freshbox-input {
+    width: 292px;
+    height: 48px;
+    padding-left: 16px;
+
+    opacity: 0.3;
+
+    border: 1px solid transparent;
+    border-color: green;
+    /* border: 1px solid #FFFFFF; */
+
+    border-radius: 100px;
+  }
+  .freshbox-input:hover,
+  .freshbox-input:focus {
+    outline: 1px solid transparent;
+    outline-color: blue;
+    border-color: none;
+  }
+  .freshbox-input:invalid {
+
+    outline:1px solid red;
+  }
+
+  .freshbox-btn-send {
+    position: absolute;
+    bottom: 0;
+    left: 202px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    padding: 15px 35px;
+    width: 102px;
+    height: 48px;
+    border-radius: 100px;
+    color: #ffffff;
+    background: #9dc162;
+    border-color: transparent;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+  }
+
+  /* .backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height:100%;
+    background: rgba(46, 47, 66, 0.4);
+
+    transition: opacity var(--animation-time) var(--animation-cubic),
+    visibility var(--animation-time) var(--animation-cubic);
+  } */
+
+  /* .backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  } */
+
+  /* .modal {
+    
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 545px;
+    padding: 68px 104px 80px 105px;
+    border-radius: 20px;
+
+    color: #fff;
+
+    background-color: #E03F5E;
+    outline: 1px solid red;
+  }
+  .modal-btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-picture {
+    margin-bottom: 28px;
+    width: 278px;
+    height: 239px;
+
+    outline: 1px solid white;
+  }
+
+  .modal-title {
+    margin-bottom: 14px;
+  }
+
+  .modal-text {
+    text-align: center;
+  } */
+
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 239px 32px 150px 32px;
+
+    outline: 1px solid green;
+  }
+
+  .freshbox-title {
+    width: 740px;
+    height: 128px;
+    top: 150px;
+    left: 238px;
+
+    font-size: 64px;
+  }
+
+  .freshbox-images {
+    gap: 24px;
+  }
+
+  .freshbox-picture {
+    width: 400px;
+  }
+  .freshbox-picture.wide {
+    width: 792px;
+  }
+}
