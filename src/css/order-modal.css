@@ -1,0 +1,349 @@
+button {
+    cursor: pointer;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .contacts {
+    font-style: normal;
+  }
+  
+  
+  
+  .hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  /* ==========MODAL FORM========== */
+  .backdrop {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 1;
+  
+    transition: opacity 250ms var(--animation-timing-function),
+      visibility 250ms var(--animation-timing-function);
+  }
+  
+  .modal {
+    position: relative;
+    width: 891px;
+    height: 911px;
+    background: #FFFFFF;
+    background-image: url(https://raw.githubusercontent.com/SuperStasss/bigfatapp/main/src/images/desktop/order/ledy-desk.webp);
+    background-repeat: no-repeat;
+    background-position: bottom 0% right 0%;
+    border-radius: 20px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    transition: transform 250ms var(--animation-timing-function);
+  }
+  .modal-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 250ms var(--animation-timing-function),
+      border-color 250ms var(--animation-timing-function);
+  }
+  .modal-close-btn-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: #AE1332;
+    stroke:  #AE1332; ;
+    transition: fill 250ms var(--animation-timing-function);
+  }
+  
+  
+  
+  
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  .modal-form-text {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 44px;
+  
+    color: #AE1332;
+  
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);  
+  }
+  .colortext{
+    color: #000000;
+    opacity: 0.5;
+  }
+  
+  .basket{
+    border-radius: 20px;
+    border: none;
+    max-width: 257px;
+  }
+  .strawberry-basket{
+    background-color: #F8766B;
+  }
+  .apple-basket {
+    background-color: #EDD251;
+  }
+  .fruits-basket{
+    background-color: #9DC262;
+  }
+  .modal-form-check{
+    margin-top: 14px;
+    margin-right: 14px;
+    margin-left: 223px;
+    width: 20px;
+    height: 20px;
+    background: #F8766B;
+    border-radius: 20px;
+  
+  }
+  .text-basket{
+    margin-top: 6px;
+    margin-left: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.04em;
+  
+    color: #FFFFFF;
+  
+  }
+  .content-basket{
+    margin-top: 8px;
+    margin-left: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  /* identical to box height, or 129% */
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+  
+    color: #FFFFFF;
+  }
+  .img-food-basket{
+    margin: 4px 14px 14px 14px;
+  }
+  .modal-form-field {
+    margin-bottom: 14px;
+  
+  }
+  
+  .modal-form-field-input-descr {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--subtitle-text-color);
+  }
+  
+  .modal-form-input-wrapper {
+    position: relative;
+    display: block;
+  }
+  .colortext {
+    background-color: #ffe; 
+    color: #930;
+    border-radius: 20px;
+  }
+  
+  .modal-form-input {
+    box-sizing: border-box; 
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    width: 360px;
+  
+    left: 0px;
+    top: 0px;
+  
+    color: #000000;
+    opacity: 0.5;
+  
+   
+    border: 1px solid #000000;
+  border-radius: 20px;
+    transition: border-color 250ms var(--animation-timing-function);
+  }
+  
+  .modal-form-input:focus {
+    outline: none;
+    border-color: var(--primary-brand-color);
+  }
+  
+  .modal-form-input-icon {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    fill: var(--primary-text-color);
+  
+    transition: fill 250ms var(--animation-timing-function);
+  }
+  
+  .modal-form-input:focus + .modal-form-input-icon {
+    fill: var(--primary-brand-color);
+  }
+  
+  .modal-form-comment {
+    height: 145px;
+    width: 332px;
+    resize: none;
+    padding-top: 15px;
+    padding-left: 24px;
+  
+    left: 0px;
+    top: 0px;
+  
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  /* identical to box height, or 129% */
+  
+    letter-spacing: -0.04em;
+  
+    color: #000000;
+    opacity: 0.5;
+  
+    border: 1px solid #000000;
+    border-radius: 20px;
+  
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+  
+    transition: border-color 250ms var(--animation-timing-function);
+  }
+  
+  .modal-form-comment:focus {
+    outline: none;
+    border-color: var(--primary-brand-color);
+  }
+  
+  .modal-form-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+  }
+  
+  .modal-form-check-descr::before {
+    content: "";
+    display: block;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgb(246, 246, 249);
+    border-radius: 2px;
+    margin-top: 14px;
+      margin-right: 14px;
+      margin-left: 223px;
+      width: 20px;
+      height: 20px;
+      background: transparent;
+      border-radius: 4px;
+  }
+  
+  .modal-form-check:checked + .modal-form-check-descr::before {
+    background-color: transparent;
+    border-color: white;
+    background-image: url(../images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+  
+  .modal-form-check:focus + .modal-form-check-descr::before {
+    outline: 1px solid var(--primary-brand-color);
+  }
+  
+  
+  
+  
+  .modal-form-submit {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 35px;
+  gap: 15px;
+  color: #FFFFFF;
+  width: 114px;
+  height: 48px;
+  
+  background: #9DC162;
+  border-radius: 100px;
+  border-color: transparent;
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }
+  
+  .modal-form-submit:hover,
+  .modal-form-submit:focus,
+  .modal-form-submit:active {
+    background-color: #9DC162;
+  }
+  
+  .basket-modal{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      border: 0;
+  }
+  .colortext{
+    color: #000000;
+    opacity: 0.5;
+  }
+  

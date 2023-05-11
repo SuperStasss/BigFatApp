@@ -1,0 +1,121 @@
+               <!-- MODAL WINDOW-->
+               <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                  <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg
+                      aria-label="Close icon"
+                      class="modal-close-btn-icon"
+                      width="28"
+                      height="28"
+                    >
+                      <use href="./images/sprite-fruts.svg#icon-icon_close"></use>
+                  
+                    </svg>
+                 </button>
+                  <form class="modal-form">
+                    <h1 class="modal-form-text"> Your Order </h1>
+                  <div class="basket-modal">
+                    <input
+                    id="user-pick"
+                    type="checkbox"
+                    name="user-pick"
+                    class="modal-form-check hidden"
+                  />
+                    <label for="user-pick" class="basket strawberry-basket modal-form-check-descr">   
+                      <h5 class="text-basket"> Strawberry Basket </h5>
+                      <p class="content-basket"> Plant</p>
+                      <img srcset=""
+                   
+                      alt="strawberry-basket"
+                      class="img-food-basket"
+                      width="173"
+                      height="196" >
+                    </label>
+                  <input
+                  id="user-pick2"
+                  type="checkbox"
+                  name="user-pick2"
+                  class="modal-form-check hidden"
+                />
+                    <label for="user-pick2" class="basket apple-basket modal-form-check-descr">
+                      <h5 class="text-basket"> Apple Basket </h5>
+                      <p class="content-basket"> Plant</p>
+                      <img src=""
+                       alt="apple-basket" 
+                       class="img-food-basket"
+                       width="229"
+                       height="196"> 
+                    </label>
+                    <input
+                      id="user-pick3"
+                      type="checkbox"
+                      name="user-pick3"
+                      class="modal-form-check hidden"
+                    />
+                    <label for="user-pick3" class="basket fruits-basket modal-form-check-descr">
+                      
+                      <h5 class="text-basket"> Fruits Basket</h5>
+                      <p class="content-basket"> Plant</p>
+                      <img src="" 
+                       alt="fruits-basket" 
+                       class="img-food-basket"
+                       width="229"
+                       height="196"> 
+                    </label>
+                  </div>
+        
+                    <label class="modal-form-field">
+                      <span class="modal-form-input-wrapper">
+                        <input
+                          type="text"
+                          name="user-name"
+                          placeholder="Enter full name..."
+                          class="modal-form-input"
+                          required
+                          pattern="[a-zA-Zа-яА-ЯіІїЇ]+"
+                        />
+                       
+                      </span>
+                    </label>
+                    
+                    <label class="modal-form-field">
+                      <span class="modal-form-input-wrapper">
+                        <input
+                          type="email"
+                          name="user-email"
+                          placeholder="Enter email..."
+                          class="modal-form-input colortext"
+                          required
+                          
+                        />
+                      </span>
+                    </label>
+        
+                    <label class="modal-form-field">
+                      <span class="modal-form-input-wrapper">
+                        <input 
+                        class="modal-form-input colortext"
+                        placeholder="Enter card.."
+                        type="tel" 
+                        pattern="[0-9]{,12}"
+                        maxlength="12"
+                        required
+                        />          
+                      </span>
+                    </label>
+                    <label class="modal-form-field">
+                      <span class="modal-form-field-input-descr">
+                      <input 
+        
+                        name="user-comment"
+                        class="modal-form-comment colortext"
+                        placeholder="Enter comments..."
+                        required 
+                      ></input>
+                    </span>
+                    </label>
+        
+                    <button class="modal-form-submit" type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
