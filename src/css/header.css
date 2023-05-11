@@ -1,7 +1,7 @@
 
 .header {
     height: 50px;
-    width: 100%;
+    max-width: 100%;
     background-color: var(--primary-color);
 }
 
@@ -65,7 +65,7 @@ margin-top: 13px;
     top: 0;
     left: 0;
     background-color: var(--main-color);
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     padding: 80px 40px;
     transform: translateX(100%);
@@ -84,6 +84,40 @@ margin-top: 13px;
     opacity: 1;
 }
 
+.close-menu {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--main-color);
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font: inherit;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 124px;
+}
+
+.menu-item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: var(--primary-color);
+}
+
+.menu-basket-icon{
+    fill: var(--primary-color);
+}
 
 @media screen and (min-width:768px) {
  
