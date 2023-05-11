@@ -67,21 +67,25 @@
   position: absolute;
   top: 0;
   right: 0;
+  filter: blur(2px);
 }
 .hero-banana {
   position: absolute;
   left: 0;
   bottom: 0;
+  filter: blur(2px);
   transform: rotate(20deg);
 }
 @media screen and (min-width: 768px) {
   .hero-strawberry {
     top: -9px;
     right: 5px;
+    filter: blur(4px);
   }
   .hero-banana {
     left: 6px;
     bottom: -32px;
+    filter: blur(4px);
   }
 }
 @media screen and (min-width: 1280px) {
