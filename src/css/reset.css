@@ -48,11 +48,14 @@ p {
 h1{
   font-size: 64px;
     line-height: 1;
+
 }
 
 h2{
-  font-size: 40px;
-    line-height: 1.1;
+  font-size: 28px;
+    line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h3{
