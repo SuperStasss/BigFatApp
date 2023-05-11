@@ -29,6 +29,7 @@
   margin: 0 auto;
 } */
 /**  |============================| steps |============================*/
+.steps-title {margin: 0 auto 14px;}
 
 .steps-description {
   text-align: center;
