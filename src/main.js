@@ -1,2 +1,2 @@
-// import './src/js/modal.js';
-// import './src/js/mobile-menu.js';
+import '../js/modal.js';
+import './js/mobile-menu.js';
