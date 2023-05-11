@@ -1,42 +1,9 @@
-/**  |============================| base |============================*/
-/* .list {
-}
-.section-title {
-  font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1em;
-  text-align: center;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-}
-.description {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.29em;
-  letter-spacing: -0.04em;
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-}
-.section {
-  background-color: #ae1332;
-}
-.container {
-  padding: 20px;
-  max-width: 375px;
-  margin: 0 auto;
-} */
-/**  |============================| steps |============================*/
 
-.steps-title {
-  font-size: 28px;
-  margin: 0 auto 14px;
-}
+/**  |============================| steps |============================*/
+.steps-title {margin: 0 auto 14px;}
+
 .steps-description {
   text-align: center;
-  color: var(--primary-color);
   margin-bottom: 44px;
 }
 
@@ -57,16 +24,13 @@
 .steps-item-number {
   min-width: 136px;
   height: 48px;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
   text-align: center;
   line-height: 48px;
   color: var(--primary-color);
   border-radius: 200px;
-
-  /* font-family: 'DM Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  letter-spacing: -0.04em; */
 }
 
 .steps-item:nth-child(1) .steps-item-number {
@@ -94,7 +58,6 @@
 .gif-wrapper {
   max-width: 335px;
   height: 476px;
-  margin-bottom: 80px;
 }
 
 .steps-image {
@@ -114,8 +77,6 @@
   .steps-title {
     display: block;
     width: 642px;
-    font-size: 40px;
-    line-height: 1.1em;
   }
   .steps-description {
     display: block;
@@ -134,7 +95,6 @@
   .gif-wrapper {
     max-width: 704px;
     height: 476px;
-    margin-bottom: 144px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
