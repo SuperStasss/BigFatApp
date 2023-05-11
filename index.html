@@ -13,12 +13,16 @@
     <title>Vanilla App Template</title>
     
     
-    <script type="module" crossorigin src="/bigfatapp/assets/index-ec808ebb.js"></script>
-    <link rel="stylesheet" href="/bigfatapp/assets/index-d1b7fd9d.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script type="module" crossorigin src="/bigfatapp/assets/index-03f5ebd9.js"></script>
+    <link rel="stylesheet" href="/bigfatapp/assets/index-47894944.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container position">
     <nav class="nav">
       <div class="nav-block">
         <ul class="nav-list">
@@ -44,7 +48,7 @@
       </div>
 
       <div class="menu">
-        <button type="button" class="burger">
+        <button type="button" class="burger js-open-menu">
           <svg class="burger-icon" width="24" height="24">
             <use href="../images/sprite-fruts.svg#icon-burger_menu"></use>
           </svg>
@@ -59,18 +63,17 @@
         </button>
       </div>
     </nav>
-
-    <button class="close-menu" type="button">
-      <svg class="close-icon" width="24" height="24">
-        <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
-      </svg>
-    </button>
   </div>
 </header>
 
 <!-- =====  MOBILE-MENU ===== -->
+<div class="mobile-menu js-menu-container position">
+  <button class="close-menu js-close-menu" type="button">
+    <svg class="close-icon" width="24" height="24">
+      <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
+    </svg>
+  </button>
 
-<div class="mobile-menu">
   <div class="menu-open">
     <ul class="menu-list">
       <li class="menu-item">
@@ -96,47 +99,74 @@
     <main>
       <section class="hero">
   <div class="container">
-    <div class="hero-box-title">
-      <h1 class="hero-title">
-        fresh harvest box<br />is your one-stop place for a delicious fruit
-        basket
-      </h1>
-      <img
-        class="hero-strawberry"
-        src="./img/hero-strawberry.png"
-        width="56"
-        height="56"
-        alt="Strawberry"
-      />
-      <img
-        class="hero-banana"
-        src="./img/hero-banana.png"
-        width="66"
-        height="44"
-        alt="Banana"
-      />
-    </div>
-    <div class="hero-box-img">
-      <img
-        class="hero-orange"
-        src="./img/hero-orange.jpg"
-        width="311"
-        height="484"
-        alt="The girl holds an orange in her hand"
-      />
-      <img
-        class="hero-orange-bottom"
-        src="./img/elements.png"
-        width="335"
-        height="509"
-        alt=""
-      />
-      <div class="hero-box-shop">
-        <a class="hero-link" rel="noopener, noreferrer" href="#fruits"
-          >shop<br />now
-        </a>
+    <div class="hero-wrapper animate__animated animate__fadeInDownBig">
+      <div class="hero-box-title">
+        <h1 class="hero-title">
+          fresh harvest box<br />is your one-stop place for a delicious fruit
+          basket
+        </h1>
+        <img
+          class="hero-strawberry"
+          srcset="
+            ../images/mobile/hero/strawbery-hero-mobile.webp      64w,
+            ../images/mobile/hero/strawbery-hero-mobile@2x.webp  128w,
+            ../images/tablet/hero/strawberry-hero-tablet.webp    124w,
+            ../images/tablet/hero/strawberry-hero-tablet@2x.webp 248w,
+            ../images/desktop/hero/strawberry-hero.webp          136w,
+            ../images/desktop/hero/strawberry-hero@2x.webp       272w
+          "
+          sizes="(min-width: 1280px) 136px, (min-width: 768px) 124px, 64px"
+          src="../images/mobile/hero/strawberry-hero-mobile.webp"
+          alt="Strawberry"
+        />
+        <img
+          class="hero-banana"
+          srcset="
+            ../images/mobile/hero/banan-hero-mobile.webp     86w,
+            ../images/mobile/hero/banan-hero-mobile@2x.webp 172w,
+            ../images/tablet/hero/banan-hero-tablet.webp    170w,
+            ../images/tablet/hero/banan-hero-tablet@2x.webp 340w,
+            ../images/desktop/hero/banan-hero.webp          229w,
+            ../images/desktop/hero/banan-hero@2x.webp       458w
+          "
+          sizes="(min-width: 1280px) 229px, (min-width: 768px) 170px, 86px"
+          src="../images/mobile/hero/banan-hero-mobile.webp"
+          alt="Banana"
+        />
+      </div>
+      <div class="hero-box-img">
+        <img
+          class="hero-orange"
+          srcset="
+            ../images/mobile/hero/hero-mobile.webp    311w,
+            ../images/mobile/hero/hero-mobile@2x.webp 622w,
+            ../images/tablet/hero/hero-tablet.webp    452w,
+            ../images/tablet/hero/hero-tablet@2x.webp 904w
+          "
+          sizes="(min-width: 768px) 452px, 311px"
+          src="../images/mobile/hero/hero-mobile.webp"
+          alt="The girl holds an orange in her hand"
+        />
+        <img
+          class="hero-orange-bottom"
+          srcset="
+            ../images/mobile/hero/elements-m.webp    335w,
+            ../images/mobile/hero/elements-m@2x.webp 670w,
+            ../images/tablet/hero/elements-t.webp    486w,
+            ../images/tablet/hero/elements-t@2x.webp 972w
+          "
+          sizes="(min-width: 768px) 486px, 335px"
+          src="../images/mobile/hero/elements-m.webp"
+          alt=""
+        />
+        <div class="hero-box-shop">
+          <a class="hero-link" rel="noopener, noreferrer" href="#fruits"
+            >shop<br />now
+          </a>
+        </div>
       </div>
     </div>
+
     <div class="hero-watermelon">
       <p class="hero-watermelon-desc">
         Our expertly curated fruit baskets are made with the freshest, highest
@@ -213,7 +243,7 @@
     </ul>
     <div class="gif-wrapper">
       <img
-        src="./src/images/d1b10426e78244d4ff8987ecdcfb2d54.gif"
+        src="../images/d1b10426e78244d4ff8987ecdcfb2d54.gif"
         alt="fruit mix"
         class="steps-image"
         width="704"
@@ -237,13 +267,13 @@
         <h4 class="portfolio-fruit-name">Strawberry</h4>
         <p class="fruit-discr">Plant</p>
         <img
-          src="../images/mobile/organik/strawberry.webp"
+          src="../images/desktop/organic/strawberry-org-desk.webp"
           alt="Strawberry"
           width="295px"
           height="251px"
           srcset="
-            ../images/mobile/organik/strawberry.webp    1x,
-            ../images/mobile/organik/strawberry@2x.webp 2x
+            ../images/desktop/organic/strawberry-org-desk.webp       1x,
+            ../images/desktop/organic/strawberry-org-desk.@2x.webp2x
           "
         />
         <button class="price-btn" type="button">100 UAH / kg</button>
@@ -253,13 +283,13 @@
         <h4 class="portfolio-fruit-name">Banana</h4>
         <p class="fruit-discr">Plant</p>
         <img
-          src="../images/mobile/organik/banan-mobile.webp"
+          src="../images/desktop/organic/banan-org-desk.webp"
           alt="Banana"
           width="295px"
           height="251px"
           srcset="
-            ../images/mobile/organik/banan-mobile.webp    1x,
-            ../images/mobile/organik/banan-mobile@2x.webp 2x
+            ../images/desktop/organic/banan-org-desk.webp    1x,
+            ../images/desktop/organic/banan-org-desk@2x.webp 2x
           "
         />
         <button class="price-btn" type="button">80 UAH / kg</button>
@@ -269,13 +299,13 @@
         <h4 class="portfolio-fruit-name">Watermelon</h4>
         <p class="fruit-discr">Plant</p>
         <img
-          src="../images/mobile/organik/watermelon-mobile.webp"
+          src="../images/desktop/organic/watermelon-org-desk.webp"
           alt="Watermelon"
           width="295px"
           height="251px"
           srcset="
-            ../images/mobile/organik/watermelon-mobile.webp    1x,
-            ../images/mobile/organik/watermelon-mobile@2x.webp 2x
+            ../images/desktop/organic/watermelon-org-desk.webp    1x,
+            ../images/desktop/organic/watermelon-org-desk@2x.webp
           "
         />
         <button class="price-btn" type="button">40 UAH / kg</button>
@@ -285,13 +315,13 @@
         <h4 class="portfolio-fruit-name">Lime</h4>
         <p class="fruit-discr">Plant</p>
         <img
-          src="../images/mobile/organik/lime-mobile.webp"
+          src="../images/desktop/organic/lime-org-desk.webp"
           alt="Lime"
           width="295px"
           height="251px"
           srcset="
-            ../images/mobile/organik/lime-mobile.webp    1x,
-            ../images/mobile/organik/lime-mobile@2x.webp 2x
+            ../../images/desktop/organic/lime-org-desk.webp 1x,
+            ../images/desktop/organic/lime-org-desk@2x.webp 2x
           "
         />
         <button class="price-btn" type="button">60 UAH / kg</button>
@@ -301,13 +331,13 @@
         <h4 class="portfolio-fruit-name">Apple</h4>
         <p class="fruit-discr">Plant</p>
         <img
-          src="../images/mobile/organik/apple-mobile.webp"
+          src="../images/desktop/organic/apple-org-desk.webp"
           alt="Apple"
           width="295px"
           height="251px"
           srcset="
-            ../images/mobile/organik/apple-mobile.webp    1x,
-            ../images/mobile/organik/apple-mobile@2x.webp 2x
+            ../images/desktop/organic/apple-org-desk.webp    1x,
+            ../images/desktop/organic/apple-org-desk@2x.webp 2x
           "
         />
         <button class="price-btn" type="button">50 UAH / kg</button>
@@ -317,13 +347,13 @@
         <h4 class="portfolio-fruit-name">Peach</h4>
         <p class="fruit-discr">Plant</p>
         <img
-          src="../images/mobile/organik/peach-mobile.webp"
+          src="../images/desktop/organic/peach-org-desk.webp"
           alt="Peach"
           width="295px"
           height="251px"
           srcset="
-            ../images/mobile/organik/peach-mobile.webp    1x,
-            ../images/mobile/organik/peach-mobile@2x.webp 2x
+            ../images/desktop/organic/peach-org-desk.webp    1x,
+            ../images/desktop/organic/peach-org-desk@2x.webp 2x
           "
         />
         <button class="price-btn" type="button">80 UAH / kg</button>
@@ -333,13 +363,13 @@
         <h4 class="portfolio-fruit-name">Plums</h4>
         <p class="fruit-discr">Plant</p>
         <img
-          src="../images/desktop/organik/plum-desktop.webp"
+          src="../images/desktop/organic/plums-org-desk.webp"
           alt="Plums"
           width="295px"
           height="251px"
           srcset="
-            ../images/desktop/organik/plum-desktop.webp    1x,
-            ../images/desktop/organik/plum-desktop@2x.webp 2x
+            ../images/desktop/organic/plums-org-desk.webp    1x,
+            ../images/desktop/organic/plums-org-desk@2x.webp 2x
           "
         />
         <button class="price-btn" type="button">40 UAH / kg</button>
@@ -349,13 +379,13 @@
         <h4 class="portfolio-fruit-name">Orange</h4>
         <p class="fruit-discr">Plant</p>
         <img
-          src="../images/desktop/organik/orange-desktop.webp"
+          src="../images/desktop/organic/kiwi-org-desk.webp"
           alt="Orange"
           width="295px"
           height="251px"
           srcset="
-            ../images/desktop/organik/orange-desktop.webp    1x,
-            ../images/desktop/organik/orange-desktop@2x.webp 2x
+            ../images/desktop/organic/kiwi-org-desk.webp    1x,
+            ../images/desktop/organic/kiwi-org-desk@2x.webp 2x
           "
         />
         <button class="price-btn" type="button">60 UAH / kg</button>
@@ -387,27 +417,43 @@
 </section>
 
       <section class="freshbox">
-  <div class="container">
+  <div class="container freshbox-cont">
     <h2 class="freshbox-title">Fresh Harvest Box has got you covered</h2>
     <div class="freshbox-images">
-
-
-
-
-
-      <picture class="freshbox-picture wide">
-        <source srcset="" media="(min-width:375px)" sizes="" />
-        <source srcset="" media="(min-width:768px)" sizes="" />
-        <source srcset="" media="(min-width:1280px)" sizes="360px" />
-        <img class="" src="" alt="Melon" width="335" height="400" />
-      </picture>
-      <picture class="freshbox-picture none">
-        <source srcset="" media="(min-width:375px)" sizes="" />
-        <source srcset="" media="(min-width:768px)" sizes="" />
-        <source srcset="" media="(min-width:1280px)" sizes="" />
-        <img class="" src="" alt="Blueberries" width="335" height="400" />
-      </picture>
+      <img
+        class="freshbox-picture wide"
+        src="../images/mobile/fresh/melon-mobile.webp"
+        alt="Melon"
+        srcset="
+          ../images/mobile/fresh/melon-mobile.webp,
+          ../images/mobile/fresh/melon-mobile@2x.webp,
+          ../images/tablet/fresh/melon-tablet.webp,
+          ../images/tablet/fresh/melon-tablet@2x.webp,
+          ../images/desktop/fresh/melon-desktop.webp,
+          ../images/desktop/fresh/melon-desktop@2.webp
+        "
+        sizes="(min-width: 1280px) 792px,
+                (min-width: 768px) 344px,
+                (min-width: 375px) 335px"
+      />
+      <img
+        class="freshbox-picture none"
+        src="../images/mobile/fresh/melon-mobile.webp"
+        alt="Melon"
+        srcset="
+          ../images/mobile/fresh/melon-mobile.webp,
+          ../images/mobile/fresh/melon-mobile@2x.webp,
+          ../images/tablet/fresh/melon-tablet.webp,
+          ../images/tablet/fresh/melon-tablet@2x.webp,
+          ../images/desktop/fresh/melon-desktop.webp,
+          ../images/desktop/fresh/melon-desktop@2.webp
+        "
+        sizes="(min-width: 1280px) 400,
+              (min-width: 768px) 344px,
+              (min-width: 375px) 335px"
+      />
     </div>
+
     <div class="freshbox-bottom">
       <p class="freshbox-text">
         Our boxes are packed with delicious, nutritious fruits and vegetables,
@@ -422,60 +468,79 @@
             type="email"
             name="E-mail"
             id="freshbox-email"
+            placeholder="Enter email..."
             required
           />
         </label>
-        <button class="freshbox-btn-send" type="submit" data-modal-open>Send</button>
+        <button class="freshbox-btn-send" type="submit" data-modal-open>
+          Send
+        </button>
       </form>
     </div>
   </div>
 </section>
 
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden none" data-modal>
   <div class="modal">
-
     <button class="modal-btn-close" type="button" data-modal-close>
       <svg width="28" height="28">
         <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
       </svg>
     </button>
+    <img
+        class="modal-picture"
+        src="../images/mobile/fresh/melon-mobile.webp"
+        alt="Raspberries"
+        srcset="
+          ../images/mobile/fresh/melon-mobile.webp,
+          ../images/mobile/fresh/melon-mobile@2x.webp,
+          ../images/tablet/fresh/melon-tablet.webp,
+          ../images/tablet/fresh/melon-tablet@2x.webp,
+          ../images/desktop/fresh/melon-desktop.webp,
+          ../images/desktop/fresh/melon-desktop@2.webp
+        "
+        sizes="(min-width: 1280px) 278px, (min-width: 768px) 278px, (min-width: 375) 207px"
+      />
 
 
-    <picture class="modal-picture">
-      <source srcset="" media="(min-width:1280px)" sizes="278px"/>
+    <!-- <picture class="modal-picture">
+      <source srcset="" media="(min-width:1280px)" sizes="278px" />
       <source srcset="" media="(min-width:768px)" sizes="278px" />
-      <source srcset="" media="(min-width:375px)" sizes="207px" />     
-      
-      <img class="" src="" alt="Raspberries" width="100%"/>
-    </picture>
+      <source srcset="" media="(min-width:375px)" sizes="207px" />
+
+      <img class="" src="" alt="Raspberries" width="100%" />
+    </picture> -->
     <h2 class="modal-title">Thank you</h2>
     <p class="modal-text">
       Thank you for your order! Our team is preparing your box with fresh,
       delicious fruits and vegetables, and we'll deliver it straight to your
-      doorstep. We appreciate your business and look forward to providing you with
-      the best possible experience!
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
     </p>
   </div>
 </div>
 
-
-
-
-
     </main>
     <footer>
-  <dvi class="footer-container">
+  <dvi class="footer-container container">
     <div class="img-logo">
       <img
         src="../images/mobile/footer/logo-footer-mobile.webp"
         srcset="
-          ../images/mobile/footer/logo-footer-mobile.webp    1x,
-          ../images/mobile/footer/logo-footer-mobile@2x.webp 2x
+          ../images/desktop/footer/logo-footer-desktop.webp    349w,
+          ../images/tablet/footer/logo-footer-tablet.webp      670w,
+          ../images/mobile/footer/logo-footer-mobile.webp      335w,
+          ../images/desktop/footer/logo-footer-desktop@2x.webp 698w,
+          ../images/tablet/footer/logo-footer-tablet@2x.webp   698w,
+          ../images/mobile/footer/logo-footer-mobile@2x.webp   670w
         "
+        sizes="(min-width: 1280px) 349px,
+              (min-width: 768px) 670px,
+              (min-width: 375px) 335px"
         alt="happy-woman-holding-tropical-fruits"
         class="img-footer"
       />
-      <div class="logo">
+      <div class="footer-logo logo">
         <a class="logo-link" href=""
           ><svg class="logo-icon" width="16" height="16">
             <use href="../images/sprite-fruts.svg#icon-cub_menu"></use>
@@ -527,21 +592,23 @@
           </a>
         </li>
       </ul>
-      <ul class="addres">
-        <li class="addres-item">
-          <a href="tel:+380684429426" class="phone-item-link"
-            >+380 (68) 443-94-26</a
-          >
-        </li>
-        <li class="addres-item">
-          <a
-            href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+%D0%A1%D0%A8%D0%90/"
-            target="_blank"
-            class="addres-item-link"
-            >1678 S. Pioneer Road Salt Lake City UT 84104</a
-          >
-        </li>
-      </ul>
+      <address>
+        <ul class="addres">
+          <li class="addres-item">
+            <a href="tel:+380684429426" class="phone-item-link"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+          <li class="addres-item">
+            <a
+              href="https://www.google.com/maps/place/1678+Pioneer+Rd,+Salt+Lake+City,+UT+84104,+%D0%A1%D0%A8%D0%90/"
+              target="_blank"
+              class="addres-item-link"
+              >1678 S. Pioneer Road Salt Lake City UT 84104</a
+            >
+          </li>
+        </ul>
+      </address>
     </div>
   </dvi>
 </footer>
