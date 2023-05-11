@@ -197,7 +197,9 @@
 }
 @media screen and (min-width: 768px) {
   .hero-watermelon-box {
-    margin-left: 64px;
+    margin-right: 0;
+  }
+  .hero-strawberry-box {
     margin-right: 0;
   }
 }
@@ -219,21 +221,7 @@
 }
 .hero-watermelon-box-img {
   margin: 0 auto;
-  /* width: 200px; */
-  /* padding-left: 24px; */
 }
-/* .hero-watermelon-box-img:before {
-  content: "";
-  position: absolute;
-  bottom: -50%;
-  left: 5%;
-  width: 90%;
-  height: 20px;
-  background: rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  z-index: -1;
-  filter: blur(13.5914px);
-} */
 
 .hero-strawberry-box-img {
   margin: 0 auto;
@@ -272,11 +260,12 @@
 @media screen and (min-width: 768px) {
   .hashtags-list {
     justify-content: right;
+    width: 270px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hashtags-list {
-    width: 300px;
+    width: 270px;
   }
 }
 .hashtags-list-item {
