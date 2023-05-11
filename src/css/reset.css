@@ -142,6 +142,7 @@ img {
 
 section {
   padding-bottom: 80px;
+  background-color: var(--main-color);
 }
 
 @media screen and(min-width:768px) {
