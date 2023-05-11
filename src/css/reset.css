@@ -145,13 +145,13 @@ section {
   background-color: var(--main-color);
 }
 
-@media screen and(min-width:768px) {
+@media screen and (min-width:768px) {
   section {
     padding-bottom: 144px;
   }
 }
 
-@media screen and(min-width:1280px) {
+@media screen and (min-width:1280px) {
   section {
     padding-bottom: 150px;
   }
