@@ -15,8 +15,7 @@
 }
 @media screen and (min-width: 1280px) {
   .footer-container {
-    max-height: 475px;
-    gap: 80px;
+    gap: 232px;
   }
 }
 /* Fotter-img */
@@ -24,10 +23,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 335px;
 }
 @media screen and (min-width: 768px) {
   .img-logo {
-    gap: 20px;
     max-width: 349px;
   }
 }
@@ -111,14 +110,15 @@
 }
 /* Addres */
 .addres {
+  font-style: inherit;
+}
+.addres-list {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  font-style: inherit;
 }
 .addres-item {
   text-align: center;
-  font-style: inherit;
 }
 @media screen and (min-width: 768px) {
   .addres-item {
