@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/bigfatapp/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ae1332" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,83 +18,81 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <script type="module" crossorigin src="/bigfatapp/assets/index-29309244.js"></script>
-    <link rel="stylesheet" href="/bigfatapp/assets/index-e26a4500.css">
+    <script type="module" crossorigin src="/bigfatapp/assets/index-98b635de.js"></script>
+    <link rel="stylesheet" href="/bigfatapp/assets/index-ef2e2341.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
+  <div class="container position">
     <nav class="nav">
-      <div class="nav-block">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#how-it-works" class="nav-link">How It Works</a>
-          </li>
-          <li class="nav-item">
-            <a href="#fruits" class="nav-link">Fruits</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contacts" class="nav-link">Contacts</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="logo">
-        <a class="logo-link" href=""
-          ><svg class="logo-icon" width="16" height="16">
-            <use href="../images/sprite-fruts.svg#icon-cub_menu"></use>
-          </svg>
-          <span class="logo-title">fresh harvest box</span></a
-        >
-      </div>
-
-      <div class="menu">
-        <button class="burger js-open-menu" type="button">
-          <svg class="burger-icon" width="24" height="24">
-            <use href="../images/sprite-fruts.svg#icon-burger_menu"></use>
-          </svg>
-        </button>
-      </div>
-
-      <div class="basket">
-        <button type="button" class="basket-button">
-          <svg class="basket-icon" width="24" height="24">
-            <use href="../images/sprite-fruts.svg#icon-korzuna"></use>
-          </svg>
-        </button>
-      </div>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#how-it-works" class="nav-link">How It Works</a>
+        </li>
+        <li class="nav-item">
+          <a href="#fruits" class="nav-link">Fruits</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contacts" class="nav-link">Contacts</a>
+        </li>
+      </ul>
     </nav>
+
+    <a class="logo-link" href=""
+      ><svg class="logo-icon" width="16" height="16">
+        <use href="../images/sprite-fruts.svg#icon-cub_menu"></use>
+      </svg>
+      fresh harvest box</a
+    >
+
+    <button class="burger js-open-menu" type="button">
+      <svg class="burger-icon" width="24" height="24">
+        <use href="../images/sprite-fruts.svg#icon-burger_menu"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="basket-button">
+      <svg class="basket-icon" width="24" height="24">
+        <use href="../images/sprite-fruts.svg#icon-korzuna"></use>
+      </svg>
+    </button>
   </div>
 </header>
 
 <!-- =====  MOBILE-MENU ===== -->
-<div class="mobile-menu js-menu-container">
-  <button class="close-menu js-close-menu" type="button">
-    <svg class="close-icon" width="24" height="24">
-      <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
-    </svg>
-  </button>
 
-  <div class="menu-open">
-    <ul class="menu-list">
-      <li class="menu-item">
-        <a class="menu-link" href="#how-it-works">How It Works</a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#fruits">Fruits</a>
-      </li>
-      <li class="menu-item">
-        <a class="menu-link" href="#contacts">Contacts</a>
-      </li>
-      <li class="menu-item">
-        <button type="button" class="menu-basket-button">
-          <svg class="menu-basket-icon" width="24" height="24">
-            <use href="../images/sprite-fruts.svg#icon-korzuna"></use>
-          </svg>
-        </button>
-      </li>
-    </ul>
+<div class="mobile-menu js-menu-container">
+  <div class="menu-header">
+    <a class="logo-link" href=""
+      ><svg class="logo-icon" width="16" height="16">
+        <use href="../images/sprite-fruts.svg#icon-cub_menu"></use>
+      </svg>
+      fresh harvest box</a
+    >
+    <button class="close-menu js-close-menu" type="button">
+      <svg class="close-icon" width="24" height="24">
+        <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
+      </svg>
+    </button>
   </div>
+  <ul class="menu-list">
+    <li class="menu-item">
+      <a class="menu-link" href="#how-it-works">How It Works</a>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link" href="#fruits">Fruits</a>
+    </li>
+    <li class="menu-item">
+      <a class="menu-link" href="#contacts">Contacts</a>
+    </li>
+    <li class="menu-item">
+      <button type="button" class="menu-basket-button">
+        <svg class="menu-basket-icon" width="24" height="24">
+          <use href="../images/sprite-fruts.svg#icon-korzuna"></use>
+        </svg>
+      </button>
+    </li>
+  </ul>
 </div>
 
     <main>
@@ -200,7 +199,7 @@
   </div>
 </section>
 
-      <section class="steps section">
+      <section class="steps section" id="how-it-works">
   <div class="container">
     <h2 class="section-title steps-title">
       To order your fruit basket, simply follow these easy steps
@@ -244,7 +243,7 @@
   </div>
 </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="fruits">
   <div class="container">
     <h2 class="section-title portfolio-sec-title">organic fruits</h2>
     <p class="portfolio-section-text">
@@ -260,14 +259,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src="../images/desktop/organic/strawberry-org-desk.webp"
+            src="/bigfatapp/assets/strawberry-org-desk-b7bf0066.webp"
             alt="Strawberry"
-            width="295px"
-            height="251px"
-            srcset="
-              ../images/desktop/organic/strawberry-org-desk.webp       1x,
-              ../images/desktop/organic/strawberry-org-desk.@2x.webp2x
-            "
+            width="295"
+            height="251"
+            srcset="/bigfatapp/assets/strawberry-org-desk-b7bf0066.webp 1x, /bigfatapp/assets/strawberry-org-desk.@2x-c552fe88.webp 2x"
           />
         </div>
 
@@ -279,14 +275,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src="../images/desktop/organic/banan-org-desk.webp"
+            src='/bigfatapp/assets/banan-org-desc-abf367de.webp'
             alt="Banana"
-            width="295px"
-            height="251px"
-            srcset="
-              ../images/desktop/organic/banan-org-desk.webp    1x,
-              ../images/desktop/organic/banan-org-desk@2x.webp 2x
-            "
+            width="295"
+            height="251"
+            srcset='/bigfatapp/assets/banan-org-desc-abf367de.webp 1x, /bigfatapp/assets/banan-org-desc@2x-cb2d22c2.webp 2x'
           />
         </div>
         <button class="price-btn" type="button">80 UAH / kg</button>
@@ -297,14 +290,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src="../images/desktop/organic/watermelon-org-desk.webp"
+            src="/bigfatapp/assets/watermelon-org-desk-6a99b407.webp"
             alt="Watermelon"
-            width="295px"
-            height="251px"
-            srcset="
-              ../images/desktop/organic/watermelon-org-desk.webp    1x,
-              ../images/desktop/organic/watermelon-org-desk@2x.webp
-            "
+            width="295"
+            height="251"
+            srcset="/bigfatapp/assets/watermelon-org-desk-6a99b407.webp 1x, /bigfatapp/assets/watermelon-org-desk@2x-f3ec3eea.webp 2x"
           />
         </div>
         <button class="price-btn" type="button">40 UAH / kg</button>
@@ -315,14 +305,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src="../images/desktop/organic/lime-org-desk.webp"
+            src="/bigfatapp/assets/lime-org-desk-b2643887.webp"
             alt="Lime"
-            width="295px"
-            height="251px"
-            srcset="
-              ../../images/desktop/organic/lime-org-desk.webp 1x,
-              ../images/desktop/organic/lime-org-desk@2x.webp 2x
-            "
+            width="295"
+            height="251"
+            srcset="/bigfatapp/assets/lime-org-desk-b2643887.webp 1x, /bigfatapp/assets/lime-org-desk@2x-591c83b4.webp 2x"
           />
         </div>
         <button class="price-btn" type="button">60 UAH / kg</button>
@@ -333,14 +320,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src="../images/desktop/organic/apple-org-desk.webp"
+            src="/bigfatapp/assets/apple-org-desk-fceaad73.webp"
             alt="Apple"
-            width="295px"
-            height="251px"
-            srcset="
-              ../images/desktop/organic/apple-org-desk.webp    1x,
-              ../images/desktop/organic/apple-org-desk@2x.webp 2x
-            "
+            width="295"
+            height="251"
+            srcset="/bigfatapp/assets/apple-org-desk-fceaad73.webp 1x, /bigfatapp/assets/apple-org-desk@2x-28dd5c84.webp 2x"
           />
         </div>
         <button class="price-btn" type="button">50 UAH / kg</button>
@@ -351,14 +335,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src="../images/desktop/organic/peach-org-desk.webp"
+            src="/bigfatapp/assets/peach-org-desk-524b771c.webp"
             alt="Peach"
-            width="295px"
-            height="251px"
-            srcset="
-              ../images/desktop/organic/peach-org-desk.webp    1x,
-              ../images/desktop/organic/peach-org-desk@2x.webp 2x
-            "
+            width="295"
+            height="251"
+            srcset="/bigfatapp/assets/peach-org-desk-524b771c.webp 1x, /bigfatapp/assets/peach-org-desk@2x-47f874d7.webp 2x"
           />
         </div>
         <button class="price-btn" type="button">80 UAH / kg</button>
@@ -369,15 +350,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            class="fruit-img"
-            src="../images/desktop/organic/plums-org-desk.webp"
+            src="/bigfatapp/assets/plums-org-desk-8771f57c.webp"
             alt="Plums"
-            width="295px"
-            height="251px"
-            srcset="
-              ../images/desktop/organic/plums-org-desk.webp    1x,
-              ../images/desktop/organic/plums-org-desk@2x.webp 2x
-            "
+            width="295"
+            height="251"
+            srcset="/bigfatapp/assets/plums-org-desk-8771f57c.webp 1x, /bigfatapp/assets/plums-org-desk@2x-1e983c6d.webp 2x"
           />
         </div>
         <button class="price-btn" type="button">40 UAH / kg</button>
@@ -388,14 +365,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src="../images/desktop/organic/orange-org-tab.webp"
+            src="/bigfatapp/assets/orange-org-tab-50baf172.webp"
             alt="Orange"
-            width="295px"
-            height="251px"
-            srcset="
-              ../images/desktop/organic/orange-org-tab.webp    1x,
-              ../images/desktop/organic/orange-org-tab@2x.webp 2x
-            "
+            width="295"
+            height="251"
+            srcset="/bigfatapp/assets/orange-org-tab-50baf172.webp 1x, /bigfatapp/assets/orange-org-tab@2x-050b2773.webp 2x"
           />
         </div>
         <button class="price-btn" type="button">60 UAH / kg</button>
@@ -406,14 +380,11 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src="../images/desktop/organic/kiwi-org-desk.webp"
+            src="/bigfatapp/assets/kiwi-org-desk-33574794.webp"
             alt="Kiwi"
-            width="295px"
-            height="251px"
-            srcset="
-              ../images/desktop/organic/kiwi-org-desk.webp    1x,
-              ../images/desktop/organic/kiwi-org-desk@2x.webp 2x
-            "
+            width="295"
+            height="251"
+            srcset="/bigfatapp/assets/kiwi-org-desk-33574794.webp 1x, /bigfatapp/assets/kiwi-org-desk@2x-2d1a5056.webp 2x"
           />
         </div>
         <button class="price-btn" type="button">90 UAH / kg</button>
@@ -421,12 +392,86 @@
     </ul>
     <button data-modal-open-fruts class="portfolio-order-btn" type="button">
       <svg class="portfolio-order-icon" width="14" height="14">
-        <use href="../images/sprite-fruts.svg#icon-strila-btn"></use>
+        <use href="/bigfatapp/assets/sprite-fruts-7cc952c4.svg#icon-strila-btn"></use>
       </svg>
       <span>Order</span>
     </button>
   </div>
 </section>
+
+<div class="backdrop-fruits is-hidden-fruits" data-modal-fruts>
+  <div class='modal-fruits'>
+    <button class="modal-fruits-button" type="button" data-modal-close-fruts>
+      <svg width="24" height="24">
+        <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
+      </svg>
+    </button>
+    <h4>Your Order</h4>
+    <ul class='modal-basket'>
+      <li class='modal-basket-item red'>
+        <div class='modal-basket-text'>
+          <h5>Strawberry Basket</h5>
+          <p>Plant</p>
+        </div>
+        <img src='../images/mobile/order/modal-strawberry.webp'
+             srcset='../images/mobile/order/modal-strawberry.webp 88w,
+             ../images/tablet/order/modal-strawberry-tab.webp 133w,
+../images/mobile/order/modal-strawberry@2x.webp 190w,
+../images/tablet/order/modal-strawberry-tab@2x.webp 266w'
+             sizes="(min-wight: 768px) 88px, (min-wight: 480px) 133px"
+             alt='strawberry-basket'>
+        <label  class='modal-basket-checkbox-svg'>
+          <input class='modal-basket-input' type='checkbox' name='apple-basket' id='strawberry-basket'>
+          <span class='modal-basket-checked'></span>
+        </label>
+      </li>
+      <li class='modal-basket-item yellow'>
+        <div class='modal-basket-text'>
+          <h5>Apple Basket</h5>
+          <p>Plant</p>
+        </div>
+        <img src='../images/mobile/order/modal-apples.webp'
+             srcset='../images/mobile/order/modal-apples.webp 106w,
+../images/mobile/order/modal-apples@2x.webp 212w,
+../images/tablet/order/modal-apples-tab.webp 172w,
+../images/tablet/order/modal-apples-tab@2x.webp 344w'
+             sizes="(min-wight: 768px) 172px, (min-wight: 480px) 106px"
+             alt='apple-basket'>
+        <label  class='modal-basket-checkbox-svg'>
+          <input class='modal-basket-input' type='checkbox' name='apple-basket' id='apple-basket'>
+          <span class='modal-basket-checked'></span>
+        </label>
+      </li>
+      <li class='modal-basket-item green'>
+        <div class='modal-basket-text'>
+          <h5>Fruits Basket</h5>
+          <p>Plant</p>
+        </div>
+        <img src='../images/mobile/order/modal-fruits.webp'
+             srcset='../images/mobile/order/modal-fruits.webp 107w,
+../images/mobile/order/modal-fruits@2x.webp 214w,
+../images/tablet/order/modal-fruits-tab.webp 172w,
+../images/tablet/order/modal-fruits-tab@2x.webp 344w'
+             sizes="(min-wight: 768px) 172px, (min-wight: 480px) 107px"
+             alt='fruits-basket'>
+        <label  class='modal-basket-checkbox-svg'>
+          <input class='modal-basket-input' type='checkbox' name='apple-basket' id='fruits-basket'>
+          <span class='modal-basket-checked'></span>
+        </label>
+      </li>
+    </ul>
+    <form class='modal-fruits-form' autocomplete='on'>
+      <input class="modal-fruits-input" type="text" name="name" id="name" required placeholder="Enter full name..." pattern='[A-Za-z]{2,}' aria-label="Enter full name" size="2">
+      <input class="modal-fruits-input" type="email" name="email" id="email" required placeholder="Enter email...">
+      <input class="modal-fruits-input" type="text" name="email" id="card" required placeholder="Enter card..">
+      <textarea class='modal-fruits-textarea' name="comment" id="comment" placeholder="Enter comments..." rows="5"></textarea>
+      <button class='modal-fruits-button-submit' type='submit'>Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
 
       <section class="freshbox">
   <div class="container freshbox-cont">
@@ -436,13 +481,7 @@
         class="freshbox-picture wide"
         src="../images/mobile/fresh/melon-mobile.webp"
         alt="Melon"
-        srcset="
-          ../images/mobile/fresh/melon-mobile.webp 335w,
-          ../images/mobile/fresh/melon-mobile@2x.webp 670w,
-          ../images/tablet/fresh/melon-tablet.webp 344w,
-          ../images/tablet/fresh/melon-tablet@2x.webp 688w,
-          ../images/desktop/fresh/melon-desktop.webp 792w,
-          ../images/desktop/fresh/melon-desktop@2x.webp 1584w"
+        srcset="/bigfatapp/assets/melon-mobile-9b8b667f.webp 335w, /bigfatapp/assets/melon-mobile@2x-e30dca64.webp 670w, /bigfatapp/assets/melon-tablet-0c4a0073.webp 344w, /bigfatapp/assets/melon-tablet@2x-6df23887.webp 688w, /bigfatapp/assets/melon-desktop-a74bcff9.webp 792w, /bigfatapp/assets/melon-desktop@2x-960f2590.webp 1584w"
 
         sizes="(min-width: 1280px) 792px,
                 (min-width: 768px) 344px,
@@ -452,11 +491,7 @@
         class="freshbox-picture none"
         src="../images/tablet/fresh/blueberry-tablet.webp"
         alt="Melon"
-        srcset="
-          ../images/tablet/fresh/blueberry-tablet.webp 344w,
-          ../images/tablet/fresh/blueberry-tablet@2x.webp 688w,
-          ../images/desktop/fresh/blueberry-desktop.webp 400w,
-          ../images/desktop/fresh/blueberry-desktop@2x.webp 800w"
+        srcset="/bigfatapp/assets/blueberry-tablet-ccbfeddf.webp 344w, /bigfatapp/assets/blueberry-tablet@2x-6fbd59ab.webp 688w, /bigfatapp/assets/blueberry-desktop-af0bf631.webp 400w, /bigfatapp/assets/blueberry-desktop@2x-53c6aaa8.webp 800w"
         sizes="(min-width: 1280px) 400px,
               (min-width: 768px) 344px"
       />
@@ -499,11 +534,7 @@
         class="modal-picture"
         src="../images/mobile/thank-juice-mobile.webp"
         alt="Raspberries"
-        srcset="
-          ../images/mobile/thank-juice-mobile.webp 207w,
-          ../images/mobile/thank-juice-mobile@2x.webp 414w,
-          ../images/desktop/thank-juice-desk.webp 278w,
-          ../images/desktop/thank-juice-desk@2x.webp 556w"
+        srcset="/bigfatapp/assets/thank-juice-mobile-1396b889.webp 207w, /bigfatapp/assets/thank-juice-mobile@2x-4497396e.webp 414w, /bigfatapp/assets/thank-juice-desk-44675c99.webp 278w, /bigfatapp/assets/thank-juice-desk@2x-a3c2d457.webp 556w"
         sizes="(min-width: 768px) 278px,
                (min-width: 375px) 207px"
       />
@@ -527,7 +558,7 @@
 </div>
 
     </main>
-    <footer>
+    <footer id="contacts">
   <div class="footer-container container">
     <div class="img-logo">
       <img
