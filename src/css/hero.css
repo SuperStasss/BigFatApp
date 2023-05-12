@@ -1,26 +1,42 @@
 .hero {
   padding-top: 56px;
-  background-color: var(--main-color);
-  color: var(--primary-color);
+  /* background-color: var(--main-color);
+  color: var(--primary-color); */
 }
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 64px;
   }
 }
-.hero-wrapper {
-  position: relative;
-  /* Висота від початку заголовка
-    до низу круга кнопки shop nov */
-  height: 584px;
-  margin-bottom: 44px;
-  /* outline: 1px solid aqua; */
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-@media screen and (min-width: 768px) {
-  .hero-wrapper {
-    /* height: 795px;
-        по замірах з макету*/
-    height: 800px;
+.hero-girl {
+  position: relative;
+  order: -1;
+  margin-bottom: calc(40px + 44px);
+}
+@media screen and (max-width: 767.98px) {
+  .hero .container {
+    justify-content: center;
+    align-items: end;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .hero-girl {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero .container {
+    padding-left: 62px;
+    padding-right: 62px;
+  }
+  .hero-girl {
+    order: 0;
   }
 }
 .hero-box-title {
@@ -42,66 +58,136 @@
 .hero-title {
   position: relative;
   z-index: 5;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1;
-
-  text-align: center;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
 }
+.hero-title::before {
+  position: absolute;
+  content: '';
+  width: 56px;
+  height: 56px;
+  right: 0;
+  top: 0;
+  background-image: url(../images/mobile/hero/hero-strawberry-mob.webp);
+  background-size: 56px 56px;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  z-index: -1;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-title::before {
+    background-image: url(../images/mobile/hero/hero-strawberry-mob@2x.webp);
+  }
+}
+.hero-title::after {
+  position: absolute;
+  content: '';
+  width: 66px;
+  height: 44px;
+  left: -1px;
+  bottom: 4px;
+  background-image: url(../images/mobile/hero/hero-banana-mob.webp);
+  background-size: 66px 44px;
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  transform: rotate(20deg);
+  z-index: -1;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-title::after {
+    background-image: url(../images/mobile/hero/hero-banana-mob@2x.webp);
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .hero-title::before {
+    width: 108px;
+    height: 108px;
+    right: 5px;
+    top: -9px;
+    background-image: url(../images/tablet/hero/hero-strawberry-tablet.webp);
+    background-size: 108px 108px;
+    filter: blur(3.5px);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-title::before {
+      background-image: url(../images/tablet/hero/hero-strawberry-tablet@2x.webp);
+    }
+  }
+  .hero-title::after {
+    width: 132px;
+    height: 88px;
+    left: 7px;
+    bottom: -47px;
+    background-image: url(../images/tablet/hero/hero-banana-tablet.webp);
+    background-size: 132px 88px;
+    filter: blur(4px);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-title::after {
+      background-image: url(../images/tablet/hero/hero-banana-tablet@2x.webp);
+    }
+  }
   .hero-title {
     font-size: 50px;
     line-height: 1.08;
   }
 }
 @media screen and (min-width: 1280px) {
+  .hero-title::before {
+    width: 120px;
+    height: 120px;
+    right: 32px;
+    top: -25px;
+    background-image: url(../images/desktop/hero/hero-strawberry-desc.webp);
+    background-size: 120px 120px;
+    filter: blur(3.5px);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-title::before {
+      background-image: url(../images/desktop/hero/hero-strawberry-desc@2x.webp);
+    }
+  }
+  .hero-title::after {
+    width: 186px;
+    height: 124px;
+    left: 38px;
+    bottom: -81px;
+    background-image: url(../images/desktop/hero/hero-banana-desc.webp);
+    background-size: 186px 124px;
+    filter: blur(4px);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-title::after {
+      background-image: url(../images/desktop/hero/hero-banana-desc@2x.webp);
+    }
+  }
   .hero-title {
     font-size: 64px;
     line-height: 1;
   }
 }
-.hero-strawberry {
-  position: absolute;
-  top: 0;
-  right: 0;
-  filter: blur(2px);
-}
-.hero-banana {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  filter: blur(2px);
-  transform: rotate(20deg);
-}
-@media screen and (min-width: 768px) {
-  .hero-strawberry {
-    top: -9px;
-    right: 5px;
-    filter: blur(4px);
-  }
-  .hero-banana {
-    left: 6px;
-    bottom: -32px;
-    filter: blur(4px);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero-strawberry {
-    top: -9px;
-    right: 5px;
-  }
-  .hero-banana {
-    left: 30px;
-    bottom: -68px;
-  }
-}
-
 .hero-box-img {
   position: relative;
-  padding-top: 60px;
+  /* В макеті реальний відступ 60px
+  116 - 56 = 60 */
+  padding-top: 55px;
 }
 @media screen and (min-width: 768px) {
   .hero-box-img {
@@ -111,6 +197,9 @@
 .hero-orange {
   margin-left: auto;
   margin-right: auto;
+  /* padding: 0 12px 12px; */
+  padding-left: 12px;
+  padding-right: 12px;
   border-radius: 500px;
 }
 .hero-orange-bottom {
@@ -118,8 +207,6 @@
   bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .hero-orange-bottom {
@@ -194,18 +281,24 @@
   text-align: center;
   width: 249px;
   height: 387px;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid transparent;
   border-radius: 500px;
   background: var(--button-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767.98px) {
+  .hero-watermelon-box,
+  .hero-strawberry-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .hero-watermelon-box {
-    margin-right: 0;
+    margin-left: 32px;
   }
   .hero-strawberry-box {
-    margin-right: 0;
+    margin-right: 32px;
   }
 }
 
@@ -246,10 +339,6 @@
 .strawberry-desc {
   padding-top: 17px;
 }
-/* hashtag-list */
-.hero-strawberry-btn {
-  padding-bottom: 80px;
-}
 .hashtags-list {
   display: flex;
   flex-wrap: wrap;
@@ -262,11 +351,12 @@
   .hashtags-list {
     justify-content: right;
     width: 270px;
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 1280px) {
   .hashtags-list {
-    width: 270px;
+    padding-bottom: 96px;
   }
 }
 .hashtags-list-item {
@@ -296,24 +386,24 @@
   color: var(--primary-color);
 }
 @media screen and (min-width: 768px) {
-  .test-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
   .hero-strawberry-btn {
     display: flex;
     flex-direction: column-reverse;
   }
 }
-@media screen and (min-width: 1280px) {
-  .test-wrapper {
-    margin-top: -570px;
-  }
-  .hero-watermelon {
-    margin-top: 75px;
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .hero-strawberry-btn {
+    align-items: end;
   }
 }
-/* =================================================== */
+@media screen and (min-width: 1280px) {
+  .hero-strawberry-btn {
+    margin-top: 272px;
+  }
+  .hero-watermelon {
+    margin-top: 344px;
+  }
+}
 .photo-wrapper::after {
   display: block;
   content: '';
