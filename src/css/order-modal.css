@@ -1,21 +1,21 @@
 button {
     cursor: pointer;
   }
-  
+
   .list {
     list-style: none;
   }
-  
+
   .link {
     text-decoration: none;
   }
-  
+
   .contacts {
     font-style: normal;
   }
-  
-  
-  
+
+
+
   .hidden {
     position: absolute;
     width: 1px;
@@ -28,7 +28,7 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  
+
   /* ==========MODAL FORM========== */
   .backdrop {
     /* position: fixed; */
@@ -38,11 +38,11 @@ button {
     height: 100%;
     z-index: 100;
     opacity: 1;
-  
+
     transition: opacity 250ms var(--animation-timing-function),
       visibility 250ms var(--animation-timing-function);
   }
-  
+
   .modal {
     position: relative;
     width: 891px;
@@ -55,14 +55,14 @@ button {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-  
+
     transition: transform 250ms var(--animation-timing-function);
   }
   .modal-close-btn {
     position: absolute;
     top: 20px;
     right: 20px;
-  
+
     width: 28px;
     height: 28px;
     padding: 0;
@@ -81,16 +81,16 @@ button {
     stroke:  #AE1332; ;
     transition: fill 250ms var(--animation-timing-function);
   }
-  
-  
-  
-  
+
+
+
+
   .modal-form {
     display: flex;
     flex-direction: column;
     padding: 40px;
   }
-  
+
   .modal-form-text {
     margin-bottom: 40px;
     display: flex;
@@ -102,16 +102,16 @@ button {
     font-weight: 500;
     font-size: 40px;
     line-height: 44px;
-  
+
     color: #AE1332;
-  
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);  
+
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   }
   .colortext{
     color: #000000;
     opacity: 0.5;
   }
-  
+
   .basket{
     border-radius: 20px;
     border: none;
@@ -134,7 +134,7 @@ button {
     height: 20px;
     background: #F8766B;
     border-radius: 20px;
-  
+
   }
   .text-basket{
     margin-top: 6px;
@@ -147,9 +147,9 @@ button {
     display: flex;
     align-items: center;
     letter-spacing: -0.04em;
-  
+
     color: #FFFFFF;
-  
+
   }
   .content-basket{
     margin-top: 8px;
@@ -160,11 +160,11 @@ button {
     font-size: 14px;
     line-height: 18px;
   /* identical to box height, or 129% */
-  
+
     display: flex;
     align-items: center;
     letter-spacing: -0.02em;
-  
+
     color: #FFFFFF;
   }
   .img-food-basket{
@@ -172,9 +172,9 @@ button {
   }
   .modal-form-field {
     margin-bottom: 14px;
-  
+
   }
-  
+
   .modal-form-field-input-descr {
     display: block;
     font-size: 12px;
@@ -182,41 +182,41 @@ button {
     letter-spacing: 0.04em;
     color: var(--subtitle-text-color);
   }
-  
+
   .modal-form-input-wrapper {
     position: relative;
     display: block;
   }
   .colortext {
-    background-color: #ffe; 
+    background-color: #ffe;
     color: #930;
     border-radius: 20px;
   }
-  
+
   .modal-form-input {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     padding-top: 15px;
     padding-left: 20px;
     padding-bottom: 15px;
     width: 360px;
-  
+
     left: 0px;
     top: 0px;
-  
+
     color: #000000;
     opacity: 0.5;
-  
-   
+
+
     border: 1px solid #000000;
   border-radius: 20px;
     transition: border-color 250ms var(--animation-timing-function);
   }
-  
+
   .modal-form-input:focus {
     outline: none;
     border-color: var(--primary-brand-color);
   }
-  
+
   .modal-form-input-icon {
     position: absolute;
     display: block;
@@ -224,58 +224,58 @@ button {
     left: 16px;
     transform: translateY(-50%);
     fill: var(--primary-text-color);
-  
+
     transition: fill 250ms var(--animation-timing-function);
   }
-  
+
   .modal-form-input:focus + .modal-form-input-icon {
     fill: var(--primary-brand-color);
   }
-  
+
   .modal-form-comment {
     height: 145px;
     width: 332px;
     resize: none;
     padding-top: 15px;
     padding-left: 24px;
-  
+
     left: 0px;
     top: 0px;
-  
+
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
   /* identical to box height, or 129% */
-  
+
     letter-spacing: -0.04em;
-  
+
     color: #000000;
     opacity: 0.5;
-  
+
     border: 1px solid #000000;
     border-radius: 20px;
-  
+
     flex: none;
     order: 3;
     flex-grow: 0;
-  
+
     transition: border-color 250ms var(--animation-timing-function);
   }
-  
+
   .modal-form-comment:focus {
     outline: none;
     border-color: var(--primary-brand-color);
   }
-  
+
   .modal-form-comment::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
   }
-  
+
   .modal-form-check-descr::before {
     content: "";
     display: block;
@@ -292,7 +292,7 @@ button {
       background: transparent;
       border-radius: 4px;
   }
-  
+
   .modal-form-check:checked + .modal-form-check-descr::before {
     background-color: transparent;
     border-color: white;
@@ -300,14 +300,14 @@ button {
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
-  
+
   .modal-form-check:focus + .modal-form-check-descr::before {
     outline: 1px solid var(--primary-brand-color);
   }
-  
-  
-  
-  
+
+
+
+
   .modal-form-submit {
     display: flex;
   flex-direction: row;
@@ -317,23 +317,23 @@ button {
   color: #FFFFFF;
   width: 114px;
   height: 48px;
-  
+
   background: #9DC162;
   border-radius: 100px;
   border-color: transparent;
   /* Inside auto layout */
-  
+
   flex: none;
   order: 1;
   flex-grow: 0;
   }
-  
+
   .modal-form-submit:hover,
   .modal-form-submit:focus,
   .modal-form-submit:active {
     background-color: #9DC162;
   }
-  
+
   .basket-modal{
       display: flex;
       flex-wrap: wrap;
@@ -346,4 +346,3 @@ button {
     color: #000000;
     opacity: 0.5;
   }
-  
