@@ -215,7 +215,15 @@ button {
   }
 
 /*modal window*/
-
+.modal-close-btn-fruts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill:#AE1332;
+  stroke: #AE1332;
+  transition: fill 250ms var(--animation-timing-function)
+}
 
 .is-hidden-fruits {
   visibility     : hidden;
@@ -353,9 +361,6 @@ input:invalid:not(:placeholder-shown) {
 
 .modal-fruits-textarea{
   border-radius: 20px;
-  }
-.modal-fruits-button svg{
-  stroke: black;
   }
 .modal-fruits-button {
   background-color: transparent;
