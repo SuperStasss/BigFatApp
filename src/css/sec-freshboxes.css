@@ -1,18 +1,10 @@
 .freshbox {
-  /* position: relative; */
-
-  /* padding-top: 133px; */
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  /* outline: 1px solid black; */
-    
 }
 
 .freshbox-cont {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,16 +12,12 @@
 }
 
 .freshbox-title {
-  /* position: absolute; */
   display: block;
   max-width: 335px;
   height: 96px;
   margin-bottom: -43px;
   z-index: 1;
-  /* left: 20px;
-  top: -53px; */
-
-  
+    
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -47,8 +35,6 @@
 
 .freshbox-picture {
   border-radius: 20px;
-
-  /* outline: 1px solid blue; */
 }
 
 .freshbox-picture.none {
@@ -104,11 +90,8 @@
 .freshbox-input:focus {
   border: 1px solid transparent;
   outline: 1px solid transparent;
-  /* border-color: blue; */
-  
 }
 .freshbox-input:invalid {
-  /* border-color: var(--primary-color); */
   outline: 1px solid red;  
 }
 
@@ -211,8 +194,6 @@
 @media screen and (min-width: 768px) {
    
   .freshbox {
-    /* padding-top: 223px; */
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,13 +201,9 @@
   }
 
   .freshbox-title {
-    /* position: absolute; */
     max-width: 648px;
     height: 108px;
     margin-bottom: -33px;
-    /* left: 60px;    
-    top: -79px; */
-
     font-size: 54px;
     line-height: 1;
   }
@@ -234,9 +211,7 @@
   .freshbox-images {
     display: flex;
     gap: 16px;
-    margin-bottom: 80px;
-
-    /* outline: 1px solid red; */
+    margin-bottom: 80px;    
   }
 
   .freshbox-picture.none {
@@ -402,20 +377,12 @@
 }
 
 @media screen and (min-width: 1280px) {
-
-
-  .freshbox {
-    /* padding-top: 239px;     */
-    /* outline: 1px solid green; */
-  }
-
+  
   .freshbox-title {
     max-width: 740px;
     height: 128px;
     margin-bottom: -33px;
-    /* top: -89px;
-    left: 270px; */
-
+    
     font-size: 64px;
     line-height: 1;
   }
@@ -423,7 +390,5 @@
   .freshbox-images {
     gap: 24px;
   }
-  /* .freshbox-picture.wide {
-    width: 792px;
-  } */
+  
 }
