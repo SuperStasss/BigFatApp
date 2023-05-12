@@ -33,7 +33,7 @@
 @media screen and (min-width: 1280px) {
   .hero .container {
     padding-left: 62px;
-    padding-right: 62px;
+    padding-right: 45px;
   }
   .hero-girl {
     order: 0;
@@ -153,6 +153,7 @@
     background-size: 120px 120px;
     filter: blur(3.5px);
   }
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),

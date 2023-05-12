@@ -329,7 +329,6 @@ button {
 .modal-fruits-textarea:hover{
   background-color: rgba(174, 19, 50, 0.1);
   box-shadow   : 0 3px 1px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
-
   }
 
 /*.modal-fruits-input:invalid{*/
