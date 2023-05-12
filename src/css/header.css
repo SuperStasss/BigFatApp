@@ -170,5 +170,13 @@
 .nav-item:not(:last-child) {
         margin-right: 20px;
     }
-
+  .position{
+    justify-content: start;
+    }
+  .nav-list{
+    margin-right: 332px;
+    }
+  .logo-link{
+    margin-right: auto;
+    }
 }
