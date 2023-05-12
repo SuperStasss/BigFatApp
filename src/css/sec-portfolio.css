@@ -335,6 +335,17 @@ button {
 /*.modal-fruits-input:invalid{*/
 /*  border-color: red;*/
 /*  }*/
+
+/* input:invalid:not(:placeholder-shown):required, 
+input:focus:invalid:not(:placeholder-shown):required {
+  outline: 2px solid red;
+}
+*/
+input:invalid:not(:placeholder-shown) {
+  outline: 1px solid red;
+}
+
+
 .modal-fruits-input::placeholder,
 .modal-fruits-textarea::placeholder{
   opacity: 50%;
