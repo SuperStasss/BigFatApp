@@ -50,7 +50,6 @@
   flex-direction: column;
   align-items: center;
   gap: 80px;
-  width: 492px;
   margin-top: 20px;   
 }
 
@@ -63,8 +62,8 @@
 }
 
 .freshbox-input {
-  width: 292px;
-  height: 48px;
+  width: 270px;
+  padding: 15px 0;
   padding-left: 24px;
   
   font-size: 14px;
@@ -78,6 +77,7 @@
 
   border-color: rgba(255, 255, 255, 0.3);
   border-radius: 100px;
+  transition: border-color var(--anim-transition);
 }
 
 .freshbox-input::placeholder {
@@ -86,38 +86,59 @@
   opacity: 0.5;  
 }
 
+
+
 .freshbox-input:hover,
-.freshbox-input:focus {
-  border: 1px solid transparent;
-  outline: 1px solid transparent;
-}
-.freshbox-input:invalid {
-  outline: 1px solid red;  
+.freshbox-input:focus { 
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
-.freshbox-input:valid {
-  background-color: blue;
+
+/* .freshbox-input:invalid {
+  outline: 1px solid red;  
+} */
+
+.freshbox-input:invalid:not(:placeholder-shown) {
+  outline: 2px solid red;
+  border: 1px solid transparent;  
 }
+
+.freshbox-input:valid(:placeholder-shown) {
+  background-color: var(--primary-color);
+}
+
+/* .freshbox-input:valid {
+  background-color: transparent;
+
+}
+
+.freshbox-input:active {
+  background-color: transparent;
+} */
 
 .freshbox-btn-send {
   position: absolute;
   bottom: 0;
-  left: 202px;
+  left: 168px;
   display: flex;
   align-items: center;
   padding: 15px 35px;
   width: 102px;
-  height: 48px;
   border-radius: 100px;
   color: #ffffff;
   background: #9dc162;
   border-color: transparent;
 
   font-size: 14px;
-  line-height: 1.29;
   letter-spacing: -0.04em;
   text-transform: capitalize;
+  transition: background-color var(--anim-transition);
 }
+
+.freshbox-btn-send:hover {
+  background-color: #7aad55;  
+}
+
   /* Modal */
 /* .backdrop.none {
   display:none;
@@ -243,6 +264,14 @@
     color: var(--primary-color);
 
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
+
+  .freshbox-input {
+    width: 292px;
+  }
+
+  .freshbox-btn-send {
+    left: 190px;
   }
   
   /* Modal place change */
