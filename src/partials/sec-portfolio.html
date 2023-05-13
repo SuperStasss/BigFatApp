@@ -19,7 +19,7 @@
             width="295"
             height="251"
             srcset="
-              ./images/desktop/organic/strawberry-org-desk.webp 1x,
+              ./images/desktop/organic/strawberry-org-desk.webp     1x,
               ./images/desktop/organic/strawberry-org-desk.@2x.webp 2x
             "
           />
@@ -33,14 +33,14 @@
         <div class="img-wrap">
           <img
             class="fruit-img"
-            src='./images/desktop/organic/banan-org-desc.webp'
+            src="./images/desktop/organic/banan-org-desc.webp"
             alt="Banana"
             width="295"
             height="251"
-            srcset='
-              ./images/desktop/organic/banan-org-desc.webp 1x,
+            srcset="
+              ./images/desktop/organic/banan-org-desc.webp    1x,
               ./images/desktop/organic/banan-org-desc@2x.webp 2x
-            '
+            "
           />
         </div>
         <button class="price-btn" type="button">80 UAH / kg</button>
@@ -56,7 +56,7 @@
             width="295"
             height="251"
             srcset="
-              ./images/desktop/organic/watermelon-org-desk.webp 1x,
+              ./images/desktop/organic/watermelon-org-desk.webp    1x,
               ./images/desktop/organic/watermelon-org-desk@2x.webp 2x
             "
           />
@@ -74,7 +74,7 @@
             width="295"
             height="251"
             srcset="
-              ./images/desktop/organic/lime-org-desk.webp 1x,
+              ./images/desktop/organic/lime-org-desk.webp    1x,
               ./images/desktop/organic/lime-org-desk@2x.webp 2x
             "
           />
@@ -182,75 +182,134 @@
 </section>
 
 <div class="backdrop-fruits is-hidden-fruits" data-modal-fruts>
-  <div class='modal-fruits'>
-    <button class="modal-fruits-button vector-close" type="button" data-modal-close-fruts>
+  <div class="modal-fruits">
+    <button
+      class="modal-fruits-button vector-close"
+      type="button"
+      data-modal-close-fruts
+    >
       <svg width="24" height="24" class="modal-close-btn-fruts">
         <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
       </svg>
     </button>
     <h4>Your Order</h4>
-    <ul class='modal-basket'>
-      <li class='modal-basket-item red'>
-        <div class='modal-basket-text'>
+    <ul class="modal-basket">
+      <li class="modal-basket-item red">
+        <div class="modal-basket-text">
           <h5>Strawberry Basket</h5>
           <p>Plant</p>
         </div>
-        <img src='../images/mobile/order/modal-strawberry.webp'
-             srcset='../images/mobile/order/modal-strawberry.webp 88w,
-             ../images/tablet/order/modal-strawberry-tab.webp 133w,
-../images/mobile/order/modal-strawberry@2x.webp 190w,
-../images/tablet/order/modal-strawberry-tab@2x.webp 266w'
-             sizes="(min-wight: 768px) 88px, (min-wight: 480px) 133px"
-             alt='strawberry-basket'>
-        <label  class='modal-basket-checkbox-svg'>
-          <input class='modal-basket-input' type='checkbox' name='apple-basket' id='strawberry-basket'>
-          <span class='modal-basket-checked'></span>
+        <img
+          src="../images/mobile/order/modal-strawberry.webp"
+          srcset="
+            ../images/mobile/order/modal-strawberry.webp         88w,
+            ../images/tablet/order/modal-strawberry-tab.webp    133w,
+            ../images/mobile/order/modal-strawberry@2x.webp     190w,
+            ../images/tablet/order/modal-strawberry-tab@2x.webp 266w
+          "
+          sizes="(min-wight: 768px) 88px, (min-wight: 480px) 133px"
+          alt="strawberry-basket"
+        />
+        <label class="modal-basket-checkbox-svg">
+          <input
+            class="modal-basket-input"
+            type="checkbox"
+            name="apple-basket"
+            id="strawberry-basket"
+          />
+          <span class="modal-basket-checked"></span>
         </label>
       </li>
-      <li class='modal-basket-item yellow'>
-        <div class='modal-basket-text'>
+      <li class="modal-basket-item yellow">
+        <div class="modal-basket-text">
           <h5>Apple Basket</h5>
           <p>Plant</p>
         </div>
-        <img src='../images/mobile/order/modal-apples.webp'
-             srcset='../images/mobile/order/modal-apples.webp 106w,
-../images/mobile/order/modal-apples@2x.webp 212w,
-../images/tablet/order/modal-apples-tab.webp 172w,
-../images/tablet/order/modal-apples-tab@2x.webp 344w'
-             sizes="(min-wight: 768px) 172px, (min-wight: 480px) 106px"
-             alt='apple-basket'>
-        <label  class='modal-basket-checkbox-svg'>
-          <input class='modal-basket-input' type='checkbox' name='apple-basket' id='apple-basket'>
-          <span class='modal-basket-checked'></span>
+        <img
+          src="../images/mobile/order/modal-apples.webp"
+          srcset="
+            ../images/mobile/order/modal-apples.webp        106w,
+            ../images/mobile/order/modal-apples@2x.webp     212w,
+            ../images/tablet/order/modal-apples-tab.webp    172w,
+            ../images/tablet/order/modal-apples-tab@2x.webp 344w
+          "
+          sizes="(min-wight: 768px) 172px, (min-wight: 480px) 106px"
+          alt="apple-basket"
+        />
+        <label class="modal-basket-checkbox-svg">
+          <input
+            class="modal-basket-input"
+            type="checkbox"
+            name="apple-basket"
+            id="apple-basket"
+          />
+          <span class="modal-basket-checked"></span>
         </label>
       </li>
-      <li class='modal-basket-item green'>
-        <div class='modal-basket-text'>
+      <li class="modal-basket-item green">
+        <div class="modal-basket-text">
           <h5>Fruits Basket</h5>
           <p>Plant</p>
         </div>
-        <img src='../images/mobile/order/modal-fruits.webp'
-             srcset='../images/mobile/order/modal-fruits.webp 107w,
-../images/mobile/order/modal-fruits@2x.webp 214w,
-../images/tablet/order/modal-fruits-tab.webp 172w,
-../images/tablet/order/modal-fruits-tab@2x.webp 344w'
-             sizes="(min-wight: 768px) 172px, (min-wight: 480px) 107px"
-             alt='fruits-basket'>
-        <label  class='modal-basket-checkbox-svg'>
-          <input class='modal-basket-input' type='checkbox' name='apple-basket' id='fruits-basket'>
-          <span class='modal-basket-checked'></span>
+        <img
+          src="../images/mobile/order/modal-fruits.webp"
+          srcset="
+            ../images/mobile/order/modal-fruits.webp        107w,
+            ../images/mobile/order/modal-fruits@2x.webp     214w,
+            ../images/tablet/order/modal-fruits-tab.webp    172w,
+            ../images/tablet/order/modal-fruits-tab@2x.webp 344w
+          "
+          sizes="(min-wight: 768px) 172px, (min-wight: 480px) 107px"
+          alt="fruits-basket"
+        />
+        <label class="modal-basket-checkbox-svg">
+          <input
+            class="modal-basket-input"
+            type="checkbox"
+            name="apple-basket"
+            id="fruits-basket"
+          />
+          <span class="modal-basket-checked"></span>
         </label>
       </li>
     </ul>
-    <form class='modal-fruits-form' autocomplete='on'>
-      <input class="modal-fruits-input" type="text" name="name" id="name" required placeholder="Enter full name..." pattern='[A-Za-z]{2,}' aria-label="Enter full name" size="2">
-      <input class="modal-fruits-input" type="email" name="email" id="email" required placeholder="Enter email...">
-      <input class="modal-fruits-input" type="text" name="email" id="card" required placeholder="Enter card.." pattern="[0-9]{16}" >
-      <textarea class='modal-fruits-textarea' name="comment" id="comment" placeholder="Enter comments..." rows="5"></textarea>
-      <button class='modal-fruits-button-submit' type='submit'>Submit</button>
+    <form class="modal-fruits-form" autocomplete="on">
+      <input
+        class="modal-fruits-input"
+        type="text"
+        name="name"
+        id="name"
+        required
+        placeholder="Enter full name..."
+        pattern="[A-Za-z]{2,}"
+        aria-label="Enter full name"
+        size="2"
+      />
+      <input
+        class="modal-fruits-input"
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="Enter email..."
+      />
+      <input
+        class="modal-fruits-input"
+        type="text"
+        name="email"
+        id="card"
+        required
+        placeholder="Enter card.."
+        pattern="[0-9]{16}"
+      />
+      <textarea
+        class="modal-fruits-textarea"
+        name="comment"
+        id="comment"
+        placeholder="Enter comments..."
+        rows="5"
+      ></textarea>
+      <button class="modal-fruits-button-submit" type="submit">Submit</button>
     </form>
   </div>
 </div>
-
-
-
