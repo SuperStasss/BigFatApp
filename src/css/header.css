@@ -1,11 +1,21 @@
 .header{
     background-color: var(--primary-color);
 }
+.nav-link{
+  transition: text-shadow var(--anim-transition);
+  }
+.nav-link:hover,
+.nav-link:focus{
+  text-shadow: 0px 0px 1px var(--button-color);
+  color: var(--button-color);
+  }
 
 .position{
     display: flex;
     align-items: center;
 }
+
+
 
 .nav-list{
     display: none;

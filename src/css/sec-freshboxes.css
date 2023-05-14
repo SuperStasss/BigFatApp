@@ -274,3 +274,11 @@
   }
 
 }
+.menu-item{
+  transition: color var(--anim-transition), text-shadow var(--anim-transition);
+  }
+.menu-item:hover,
+.menu-item:focus{
+  text-shadow: 0px 0px 1px var(--button-color);
+  color: var(--button-color);
+  }
