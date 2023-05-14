@@ -39,8 +39,8 @@ button {
     z-index: 100;
     opacity: 1;
 
-    transition: opacity 250ms var(--animation-timing-function),
-      visibility 250ms var(--animation-timing-function);
+    transition: opacity 250ms var(--anim-transition),
+      visibility 250ms var(--anim-transition);
   }
 
   .modal {

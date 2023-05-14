@@ -322,11 +322,13 @@ button {
   border-radius: 4px;
 }
 
+
 .modal-basket-input:checked + .modal-basket-checked {
   background-position : center;
   background-image    : url("../images/icon-check.svg");
   background-repeat   : no-repeat;
   }
+
 
 .modal-fruits-form {
   display: flex;
@@ -409,7 +411,7 @@ input:invalid:not(:placeholder-shown) {
     top: 65%;
     padding: 40px;
     max-width: 704px;
-    background-image: url("../images/tablet/order/ledy-order-tab.webp");
+    background-image: url('../images/tablet/order/ledy-order-tab.webp');
     background-repeat: no-repeat;
     background-position: right bottom;
   }
@@ -448,7 +450,9 @@ input:invalid:not(:placeholder-shown) {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx){
     .modal-fruits{
+
       background-image: url("../images/desktop/order/ledy-desk@2x.webp");
+
       background-size: 471px;
       }
     }
