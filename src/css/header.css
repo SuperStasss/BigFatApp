@@ -20,8 +20,6 @@
     line-height: 1.3;
     text-transform: uppercase;
     display: flex;
-    align-items: center;
-    margin-right: auto;
 }
 
 .logo-link svg {
@@ -156,6 +154,9 @@
 .burger{
     display: none;
 }
+.logo-link{
+  transform: translateX(-50%);
+  }
 
 .basket-button{
     display: block;
@@ -177,14 +178,7 @@
 .nav-item:not(:last-child) {
         margin-right: 20px;
     }
-  .nav{
-    margin-right: 0;
-    }
   .position{
-    justify-content: start;
-    }
-
-  .logo-link{
-    margin-right: auto;
+    justify-content: space-between;
     }
 }

@@ -26,7 +26,7 @@
 
 .img-wrap::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   width: 195px;
   height: 38px;
@@ -139,6 +139,7 @@
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  transition: background-color var(--anim-transition), color var(--anim-transition);
 }
 .portfolio-order-icon {
   fill: #ffffff;
@@ -210,7 +211,7 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} 
+}
 .hidden {
   position: absolute;
   width: 1px;
@@ -300,12 +301,22 @@ button {
 }
 .modal-basket-checkbox-svg {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 0;
+  right: 0;
   display: block;
-  width: 16px;
-  height: 16px;
+  width: 100%;
+  height: 100%;
 }
+.modal-basket-item{
+  transition: box-shadow var(--anim-transition);
+  }
+.modal-basket-item:focus,
+.modal-basket-item:hover{
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.08),
+  0 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+
 
 .modal-basket-item input {
   display: block;
@@ -315,19 +326,21 @@ button {
 
 .modal-basket-checked {
   display: block;
+  position: absolute;
+  top: 14px;
+  right: 14px;
   width: 16px;
   height: 16px;
   border: 1px solid rgb(247, 247, 253);
   border-radius: 4px;
 }
 
+
 .modal-basket-input:checked + .modal-basket-checked {
-  background-size: contain;
-  background-position: center;
-  background-image: url('../images/icon-check.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
+  background-position : center;
+  background-image    : url("../images/icon-check.svg");
+  background-repeat   : no-repeat;
+  }
 
 
 .modal-fruits-form {
@@ -395,9 +408,18 @@ input:invalid:not(:placeholder-shown) {
   border: 1px solid var(--button-color);
 }
 
+.mod-tab-img{
+  display: none;
+  }
 @media screen and (min-width: 768px) {
   .backdrop-fruits {
   }
+  .mod-tab-img{
+    display: block;
+    }
+  .mod-mob-img{
+    display: none;
+    }
   .modal-fruits {
     top: 65%;
     padding: 40px;
@@ -406,6 +428,15 @@ input:invalid:not(:placeholder-shown) {
     background-repeat: no-repeat;
     background-position: right bottom;
   }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .modal-fruits{
+      background-image: url("../images/tablet/order/ledy-order-tab.@2x.webp");
+      background-size: 290px;
+      }
+    }
   .modal-basket {
     flex-wrap: nowrap;
   }
@@ -422,6 +453,25 @@ input:invalid:not(:placeholder-shown) {
     max-width: 360px;
   }
 }
-textarea { 
-  resize: none; 
+@media screen and (min-width: 1280px) {
+  .modal-fruits{
+    max-width: 890px;
+    background-image: url("../images/desktop/order/ledy-desk.webp");
+    }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .modal-fruits{
+
+      background-image: url("../images/desktop/order/ledy-desk@2x.webp");
+
+      background-size: 471px;
+      }
+    }
+  }
+
+
+textarea {
+  resize: none;
 }
