@@ -405,3 +405,6 @@ input:invalid:not(:placeholder-shown) {
     max-width: 360px;
   }
 }
+textarea { 
+  resize: none; 
+}
