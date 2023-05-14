@@ -26,7 +26,7 @@
 
 .img-wrap::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   width: 195px;
   height: 38px;
@@ -323,13 +323,11 @@ button {
 }
 
 
-  background-size: contain;
-  /*background-position: center;*/
-
-  background-image: url('../images/icon-check.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
+.modal-basket-input:checked + .modal-basket-checked {
+  background-position : center;
+  background-image    : url("../images/icon-check.svg");
+  background-repeat   : no-repeat;
+  }
 
 
 .modal-fruits-form {
@@ -452,7 +450,9 @@ input:invalid:not(:placeholder-shown) {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx){
     .modal-fruits{
-      ackground-image: url("../images/desktop/order/ledy-desk@2x.webp");
+
+      background-image: url("../images/desktop/order/ledy-desk@2x.webp");
+
       background-size: 471px;
       }
     }

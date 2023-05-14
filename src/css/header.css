@@ -21,7 +21,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    margin-right: auto;
+  transform: translateX(-50%);
 }
 
 .logo-link svg {
@@ -177,14 +177,7 @@
 .nav-item:not(:last-child) {
         margin-right: 20px;
     }
-  .nav{
-    margin-right: 0;
-    }
   .position{
-    justify-content: start;
-    }
-
-  .logo-link{
-    margin-right: auto;
+    justify-content: space-between;
     }
 }
