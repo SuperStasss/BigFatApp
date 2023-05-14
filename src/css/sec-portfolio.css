@@ -317,7 +317,6 @@ button {
   display: block;
   width: 16px;
   height: 16px;
-  transition: 0.5s;
   border: 1px solid rgb(247, 247, 253);
   border-radius: 4px;
 }
