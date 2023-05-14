@@ -3,7 +3,7 @@
     <h2 class="freshbox-title">Fresh Harvest Box has got you covered</h2>
     <div class="freshbox-images">
       <img
-        class="freshbox-picture wide"
+        class="freshbox-picture"
         src="./images/mobile/fresh/melon-mobile.webp"
         alt="Melon"
         loading="lazy"
@@ -50,6 +50,7 @@
             name="E-mail"
             placeholder="Enter email..."
             required
+            minlength="3"
           />
           <button class="freshbox-btn-send" type="submit" data-modal-open>
             Send
@@ -64,7 +65,7 @@
   <div class="modal">
     <button class="modal-btn-close" type="button" data-modal-close>
       <svg width="28" height="28">
-        <use href="../images/sprite-fruts.svg#icon-icon_close"></use>
+        <use href="./images/sprite-fruts.svg#icon-icon_close"></use>
       </svg>
     </button>
     <img
