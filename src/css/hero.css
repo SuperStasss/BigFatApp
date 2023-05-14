@@ -263,9 +263,9 @@
 .hero-watermelon-desc {
   width: 279px;
   max-width: 100%;
-  padding-bottom: 44px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 44px;
+  /* margin-left: auto;
+  margin-right: auto; */
   font-weight: 400;
   font-size: 14px;
   text-align: start;
@@ -275,7 +275,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero-watermelon-desc {
-    margin: 0;
+    /* margin-bottom: 45px; */
   }
 }
 @media screen and (min-width: 1280px) {
@@ -288,7 +288,7 @@
   position: relative;
   text-align: center;
   width: 249px;
-  height: 387px;
+  min-height: 387px;
   border: 1px solid transparent;
   border-radius: 500px;
   background: var(--button-color);
@@ -331,6 +331,7 @@
 
 .hero-strawberry-box-img {
   margin: 0 auto;
+  margin-bottom: 17px;
 }
 .watermelon-desc,
 .strawberry-desc {
@@ -343,28 +344,26 @@
   color: var(--primary-color);
   padding-top: 2px;
   margin: 0 auto;
-}
-.strawberry-desc {
-  padding-top: 17px;
+  margin-bottom: 40px;
 }
 .hashtags-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
-  padding-top: 44px;
-  padding-bottom: 44px;
+  margin-bottom: 44px;
 }
 @media screen and (min-width: 768px) {
   .hashtags-list {
     justify-content: right;
     width: 270px;
-    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 44px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hashtags-list {
-    padding-bottom: 96px;
+    margin-bottom: 96px;
   }
 }
 .hashtags-list-item {
@@ -394,6 +393,7 @@
   color: var(--primary-color);
 }
 .hero-strawberry {
+  margin-top: 44px;
   animation-name: fadeInRightMy;
   animation-duration: var(--anim-duration);
 }
@@ -401,6 +401,7 @@
   .hero-strawberry {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 0;
   }
   .hero-watermelon {
     align-self: flex-end;
