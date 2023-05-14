@@ -11,6 +11,7 @@
     display: none;
 }
 
+
 .logo-link{
     padding: 16px 0;
     color: var(--main-color);
@@ -20,7 +21,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    margin-right: auto;
+  transform: translateX(-50%);
 }
 
 .logo-link svg {
@@ -56,7 +57,7 @@
     width: 100%;
     height: 100%;
     transform: translateX(100%);
-    transition: transform var(--anim-transition);
+    transition: transform var(--anim-transition), opacity var(--anim-transition), visibility var(--anim-transition);
     display: flex;
     flex-direction: column;
     pointer-events: none;
@@ -70,6 +71,13 @@
     visibility: visible;
     opacity: 1;
 }
+.logo-link{
+  z-index: 6;
+  }
+
+.menu-header .logo-link{
+  visibility: hidden;
+  }
 
 .close-menu {
     display: flex;
@@ -123,9 +131,10 @@
 
 .nav{
     display: flex;
-    margin-right: 94px;
 }
-
+.position{
+  justify-content: space-between;
+  }
  .nav-list{
     padding: 16px 0;
     display: flex;
@@ -151,6 +160,8 @@
 .basket-button{
     display: block;
     padding: 0;
+  width: 24px;
+  height: 24px;
     border: none;
     background-color: transparent;
 }
@@ -166,16 +177,7 @@
 .nav-item:not(:last-child) {
         margin-right: 20px;
     }
-  .nav{
-    margin-right: 0;
-    }
   .position{
-    justify-content: start;
-    }
-  .nav-list{
-    margin-right: 332px;
-    }
-  .logo-link{
-    margin-right: auto;
+    justify-content: space-between;
     }
 }

@@ -13,27 +13,20 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  /* justify-content: center; */
-  /* align-items: center; */
   margin-bottom: 44px;
 }
 .portfolio-item {
   width: 100%;
   position: relative;
-  /* max-width: 335px; */
   padding-top: 64px;
   padding-bottom: 24px;
   padding-left: 24px;
   border-radius: 20px;
 }
 
-.fruit-img {
-  /* position: relative; */
-}
-
 .img-wrap::after {
   display: block;
-  content: '';
+  content: "";
   position: absolute;
   width: 195px;
   height: 38px;
@@ -105,7 +98,6 @@
 }
 
 .portfolio-fruit-name {
-
   font-weight: 700;
   font-size: 32px;
   line-height: 1.19;
@@ -116,7 +108,6 @@
   margin-bottom: 8px;
 }
 .fruit-discr {
-
   font-weight: 400;
   font-size: 18px;
   line-height: 1.3;
@@ -154,6 +145,15 @@
   fill: #ffffff;
 }
 
+.portfolio-order-btn:hover {
+  background-color: #ffffff;
+  color: #9dc262;
+}
+
+.portfolio-order-btn:hover .portfolio-order-icon {
+  fill: #9dc262;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-list {
     display: flex;
@@ -163,13 +163,13 @@
   .portfolio-item {
     flex-basis: calc((100% - 16px) / 2);
   }
-  .price-btn{
+  .price-btn {
     width: 136px;
     height: 48px;
-    }
-  .portfolio-order-btn{
+  }
+  .portfolio-order-btn {
     padding: 38px 18px;
-    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -185,21 +185,22 @@
 
 button {
   cursor: pointer;
-  }
+}
 
 .list {
   list-style: none;
-  }
+}
 
 .link {
   text-decoration: none;
-  }
+}
 
 .contacts {
   font-style: normal;
-  }
+}
 
-.hidden-fruits {
+.hidden-fruits,
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -210,7 +211,19 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-  }
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /*modal window*/
 .modal-close-btn-fruts {
@@ -218,18 +231,19 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill:#AE1332;
-  stroke: #AE1332;
-  transition: fill 250ms var(--anim-transition)
+  fill: #ae1332;
+  stroke: #ae1332;
+  transition: fill 250ms var(--anim-transition);
 }
 
 .is-hidden-fruits {
-  visibility     : hidden;
-  opacity        : 0;
-  pointer-events : none;
-  }
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
 .backdrop-fruits {
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: fixed;
   top: 0;
   left: 0;
@@ -241,170 +255,206 @@ button {
   z-index: 999;
   overflow: auto;
   opacity: 1;
-  }
+}
 
 .modal-fruits {
-  position         : relative;
-  top              : 70%;
-  left             : 50%;
-  transform        : translateX(-50%) translateY(-50%);
-  max-width        : 335px;
-  background-color : #ffffff;
-  border-radius    : 20px;
+  position: relative;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  max-width: 335px;
+  background-color: #ffffff;
+  border-radius: 20px;
   padding: 20px;
-  }
+}
 
-.modal-fruits h4{
+.modal-fruits h4 {
   color: var(--main-color);
   text-transform: uppercase;
   margin-bottom: 40px;
-  }
-.modal-basket-text h5{
+}
+.modal-basket-text h5 {
   margin-bottom: 2px;
-  }
-.red{
-  background-color: #F8766B;
-  }
-.yellow{
-  background-color: #EDD251;
-  }
-.green{
-  background-color: #9DC262;
-  }
-.modal-basket{
+}
+.red {
+  background-color: #f8766b;
+}
+.yellow {
+  background-color: #edd251;
+}
+.green {
+  background-color: #9dc262;
+}
+.modal-basket {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 40px;
-  }
-.modal-basket-item{
+}
+.modal-basket-item {
   position: relative;
   border-radius: 20px;
   display: flex;
   padding: 14px 32px 8px 20px;
   justify-content: space-between;
   width: 100%;
-  }
-.modal-basket-checkbox-svg{
+}
+.modal-basket-checkbox-svg {
   position: absolute;
   top: 14px;
   right: 14px;
   display: block;
   width: 16px;
   height: 16px;
-  }
-.modal-basket-item input{
-  display            : block;
-  -moz-appearance    : none;
-  -webkit-appearance : none;
-  }
+}
+
+.modal-basket-item input {
+  display: block;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
 
 .modal-basket-checked {
-  background-image: url("../images/desktop/uncheck.svg");
-  display          : block;
-  width            : 16px;
-  height           : 16px;
-  transition       : .5s;
-  }
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(247, 247, 253);
+  border-radius: 4px;
+}
 
 .modal-basket-input:checked + .modal-basket-checked {
-  background-size     : contain;
   background-position : center;
-  background-image    : url("../images/desktop/check.svg");
+  background-image    : url("../images/icon-check.svg");
+  background-repeat   : no-repeat;
   }
 
-.modal-fruits-form{
+.modal-fruits-form {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  }
+}
 
 .modal-fruits-input,
-.modal-fruits-textarea{
+.modal-fruits-textarea {
   outline: none;
   width: 100%;
   border-radius: 100px;
   padding: 24px 14px;
-  border: 1px solid rgba(0, 0, 0, .3);
+  border: 1px solid rgba(0, 0, 0, 0.3);
   transition: box-shadow var(--anim-transition);
-  }
+}
 
 .modal-fruits-input:focus,
 .modal-fruits-input:hover,
 .modal-fruits-textarea:focus,
-.modal-fruits-textarea:hover{
+.modal-fruits-textarea:hover {
   background-color: rgba(174, 19, 50, 0.1);
-  box-shadow   : 0 3px 1px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12);
-  }
-
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.08),
+    0 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 input:invalid:not(:placeholder-shown) {
   outline: 1px solid red;
 }
 
-
 .modal-fruits-input::placeholder,
-.modal-fruits-textarea::placeholder{
+.modal-fruits-textarea::placeholder {
   opacity: 50%;
-  }
+}
 
-.modal-fruits-textarea{
+.modal-fruits-textarea {
   border-radius: 20px;
-  }
+}
 .modal-fruits-button {
   background-color: transparent;
   border: none;
-  height           : 24px;
-  position         : absolute;
-  right            : 20px;
-  top              : 20px;
-  transition       : transform 800ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor           : pointer;
-  }
-.modal-fruits-button:hover{
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transition: transform 800ms 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.modal-fruits-button:hover {
   transform: rotate(180deg);
-  }
+}
 
-.modal-fruits-button-submit{
+.modal-fruits-button-submit {
   padding: 12px 24px;
   color: var(--primary-color);
   background-color: var(--button-color);
   border: none;
   border-radius: 100px;
-  }
+}
 .modal-fruits-button-submit:hover,
-.modal-fruits-button-submit:active{
+.modal-fruits-button-submit:active {
   color: var(--button-color);
   background-color: var(--primary-color);
   border: 1px solid var(--button-color);
+}
+
+.mod-tab-img{
+  display: none;
   }
-
-
-@media screen and (min-width: 768px){
-  .backdrop-fruits{
+@media screen and (min-width: 768px) {
+  .backdrop-fruits {
+  }
+  .mod-tab-img{
+    display: block;
     }
-  .modal-fruits{
-    top: 50%;
+  .mod-mob-img{
+    display: none;
+    }
+  .modal-fruits {
+    top: 65%;
     padding: 40px;
     max-width: 704px;
     background-image: url("../images/tablet/order/ledy-order-tab.webp");
     background-repeat: no-repeat;
     background-position: right bottom;
-
+  }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .modal-fruits{
+      background-image: url("../images/tablet/order/ledy-order-tab.@2x.webp");
+      background-size: 290px;
+      }
     }
-  .modal-basket{
+  .modal-basket {
     flex-wrap: nowrap;
-    }
-  .modal-basket-item{
+  }
+  .modal-basket-item {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
     padding: 40px 14px 14px 14px;
-    }
-  .modal-basket-item img{
+  }
+  .modal-basket-item img {
     margin: 0 auto;
-    }
-  .modal-fruits-form{
+  }
+  .modal-fruits-form {
     max-width: 360px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .modal-fruits{
+    max-width: 890px;
+    background-image: url("../images/desktop/order/ledy-desk.webp");
+    }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .modal-fruits{
+      background-image: url("../images/desktop/order/ledy-desk@2x.webp");
+      background-size: 471px;
+      }
     }
   }
+
+
+textarea {
+  resize: none;
+}
