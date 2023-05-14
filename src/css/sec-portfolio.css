@@ -322,7 +322,6 @@ button {
 }
 
 .modal-basket-input:checked + .modal-basket-checked {
-  background-size: contain;
   background-position: center;
   background-image: url('../images/icon-check.svg');
   background-repeat: no-repeat;
