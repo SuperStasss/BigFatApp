@@ -29,12 +29,12 @@
 @media screen and (min-width: 768px) {
   .img-logo {
     max-width: 349px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 1280px) {
   .img-logo {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -43,6 +43,7 @@
 }
 .footer-logo-link {
   padding: 0;
+  transform: translateX(0);
 }
 .footer-nav {
   display: flex;
