@@ -210,7 +210,7 @@ button {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-} 
+}
 .hidden {
   position: absolute;
   width: 1px;
@@ -323,7 +323,7 @@ button {
 
 .modal-basket-input:checked + .modal-basket-checked {
   background-size: contain;
-  background-position: center;
+  /*background-position: center;*/
   background-image: url('../images/icon-check.svg');
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -395,9 +395,18 @@ input:invalid:not(:placeholder-shown) {
   border: 1px solid var(--button-color);
 }
 
+.mod-tab-img{
+  display: none;
+  }
 @media screen and (min-width: 768px) {
   .backdrop-fruits {
   }
+  .mod-tab-img{
+    display: block;
+    }
+  .mod-mob-img{
+    display: none;
+    }
   .modal-fruits {
     top: 65%;
     padding: 40px;
@@ -406,6 +415,15 @@ input:invalid:not(:placeholder-shown) {
     background-repeat: no-repeat;
     background-position: right bottom;
   }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .modal-fruits{
+      background-image: url("../images/tablet/order/ledy-order-tab.@2x.webp");
+      background-size: 290px;
+      }
+    }
   .modal-basket {
     flex-wrap: nowrap;
   }
@@ -422,6 +440,23 @@ input:invalid:not(:placeholder-shown) {
     max-width: 360px;
   }
 }
-textarea { 
-  resize: none; 
+@media screen and (min-width: 1280px) {
+  .modal-fruits{
+    max-width: 890px;
+    background-image: url("../images/desktop/order/ledy-desk.webp");
+    }
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+    .modal-fruits{
+      ackground-image: url("../images/desktop/order/ledy-desk@2x.webp");
+      background-size: 471px;
+      }
+    }
+  }
+
+
+textarea {
+  resize: none;
 }
