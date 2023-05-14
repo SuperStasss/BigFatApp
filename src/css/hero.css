@@ -1,5 +1,7 @@
 .hero {
   padding-top: 56px;
+  --anim-duration: 1000ms;
+  --anim-offset: 1000px;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -15,6 +17,9 @@
   position: relative;
   order: -1;
   margin-bottom: calc(40px + 44px);
+
+  animation-name: fadeInDownMy;
+  animation-duration: var(--anim-duration);
 }
 @media screen and (max-width: 767.98px) {
   .hero .container {
@@ -24,8 +29,10 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .hero-girl {
-    left: 50%;
-    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    /* left: 50%;
+    transform: translateX(-50%); */
   }
 }
 @media screen and (min-width: 1280px) {
@@ -249,6 +256,10 @@
   color: var(--button-color);
 }
 /* ======================================================= */
+.hero-watermelon {
+  animation-name: fadeInLeftMy;
+  animation-duration: var(--anim-duration);
+}
 .hero-watermelon-desc {
   width: 279px;
   max-width: 100%;
@@ -382,8 +393,12 @@
   text-transform: uppercase;
   color: var(--primary-color);
 }
+.hero-strawberry {
+  animation-name: fadeInRightMy;
+  animation-duration: var(--anim-duration);
+}
 @media screen and (min-width: 768px) {
-  .hero-strawberry-btn {
+  .hero-strawberry {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -392,13 +407,13 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
-  .hero-strawberry-btn {
+  .hero-strawberry {
     align-items: end;
     margin-bottom: 7px;
   }
 }
 /* @media screen and (min-width: 1280px) {
-  .hero-strawberry-btn {
+  .hero-strawberry {
     margin-top: 272px;
   }
   .hero-watermelon {
@@ -430,4 +445,41 @@
   mix-blend-mode: normal;
   opacity: 0.1;
   filter: blur(13.5914px);
+}
+/* === Animations ================ */
+@keyframes fadeInDownMy {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(calc(var(--anim-offset) * -1));
+    transform: translateY(calc(var(--anim-offset) * -1));
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeInLeftMy {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(calc(var(--anim-offset) * -1));
+    transform: translateX(calc(var(--anim-offset) * -1));
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRightMy {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(var(--anim-offset));
+    transform: translateX(var(--anim-offset));
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
