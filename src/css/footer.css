@@ -24,6 +24,7 @@
   flex-direction: column;
   gap: 20px;
   max-width: 335px;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .img-logo {
@@ -38,12 +39,7 @@
 }
 
 .footer-logo {
-  margin: 0 0 0 90px;
-}
-@media screen and (min-width: 768px) {
-  .footer-logo {
-    margin: 0 0 0 94px;
-  }
+  margin: 0;
 }
 .footer-logo-link {
   padding: 0;
