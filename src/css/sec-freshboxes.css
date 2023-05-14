@@ -174,10 +174,11 @@
   stroke: var(--primary-color);
   background-color: var(--background-modal);
   border: 1px solid transparent;
+  transition: transform var(--anim-transition);
 }
 
 .modal-btn-close:hover {
-  rotate: 90deg;
+  transform: rotate(90deg);
 }
 
 .modal-picture {
