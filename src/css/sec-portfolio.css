@@ -198,7 +198,20 @@ button {
   font-style: normal;
 }
 
-.hidden-fruits {
+.hidden-fruits,
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
+.hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -293,6 +306,7 @@ button {
   width: 16px;
   height: 16px;
 }
+
 .modal-basket-item input {
   display: block;
   -moz-appearance: none;
@@ -300,18 +314,21 @@ button {
 }
 
 .modal-basket-checked {
-  background-image: url('../images/desktop/uncheck.svg');
   display: block;
   width: 16px;
   height: 16px;
-  transition: 0.5s;
+  border: 1px solid rgb(247, 247, 253);
+  border-radius: 4px;
 }
 
 .modal-basket-input:checked + .modal-basket-checked {
   background-size: contain;
   background-position: center;
-  background-image: url('../images/desktop/check.svg');
+  background-image: url('../images/icon-check.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
+
 
 .modal-fruits-form {
   display: flex;
@@ -404,4 +421,7 @@ input:invalid:not(:placeholder-shown) {
   .modal-fruits-form {
     max-width: 360px;
   }
+}
+textarea { 
+  resize: none; 
 }
