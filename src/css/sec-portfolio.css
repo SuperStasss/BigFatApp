@@ -148,6 +148,7 @@
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  transition: background-color var(--anim-transition), color var(--anim-transition);
 }
 .portfolio-order-icon {
   fill: #ffffff;
