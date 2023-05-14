@@ -245,7 +245,7 @@ button {
 
 .modal-fruits {
   position: relative;
-  top: 70%;
+  top: 95%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   max-width: 335px;
@@ -382,7 +382,7 @@ input:invalid:not(:placeholder-shown) {
   .backdrop-fruits {
   }
   .modal-fruits {
-    top: 50%;
+    top: 65%;
     padding: 40px;
     max-width: 704px;
     background-image: url('../images/tablet/order/ledy-order-tab.webp');
