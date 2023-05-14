@@ -21,6 +21,10 @@
   background: var(--primary-color);
 }
 
+.steps-item:nth-child(1).element-show {animation: pulseCustom 0.7s ease-in-out;}
+.steps-item:nth-child(2).element-show {animation: pulseCustom 0.7s ease-in-out 0.7s;}
+.steps-item:nth-child(3).element-show {animation: pulseCustom 0.7s ease-in-out 1.4s;}
+
 .steps-item-number {
   min-width: 136px;
   height: 48px;
